@@ -1,0 +1,328 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  11 SEP 2013 20:41
+entering extended mode
+**assignment01.tex
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, lao, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ng
+erman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, s
+lovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishm
+ax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mdwtools\footnote.sty"
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box28
+\fn@width=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count90
+\LTcapwidth=\dimen106
+\LT@head=\box29
+\LT@firsthead=\box30
+\LT@foot=\box31
+\LT@lastfoot=\box32
+\LT@cols=\count91
+\LT@rows=\count92
+\c@LT@tables=\count93
+\c@LT@chunks=\count94
+\LT@p@ftn=\toks17
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen107
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tablefootnote\tablefootnote.sty"
+Package: tablefootnote 2012/07/29 v1.0h Table foot notes (HMM)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\letltxmacro.sty"
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count95
+)
+\etb@tempcnta=\count96
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen108
+\extrarowheight=\dimen109
+\NC@list=\toks18
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\TX@col@width=\dimen110
+\TX@old@table=\dimen111
+\TX@old@col=\dimen112
+\TX@target=\dimen113
+\TX@delta=\dimen114
+\TX@cols=\count97
+\TX@ftn=\toks19
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count98
+\scratchdimen=\dimen115
+\scratchbox=\box33
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen116
+\MPnumerator=\count102
+\makeMPintoPDFobject=\count103
+\everyMPtoPDFconversion=\toks21
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.toc"
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 1.
+)
+\tf@toc=\write3
+ [1
+
+]
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.lof")
+\tf@lof=\write4
+ [2
+
+]
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.lot")
+\tf@lot=\write5
+ [3
+
+]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 51.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 51.
+
+Overfull \hbox (8.95288pt too wide) in paragraph at lines 57--58
+[]\OML/cmm/m/it/10.95 <\OT1/cmr/m/n/10.95 form class=''ui3-searchbox yui3-skin-sam'' action=''$\OT1/cmtt/m/n/10.95 http 
+: / / search . nfl . com / search$\OT1/cmr/m/n/10.95 ''
+ []
+
+<BrowserQuery.png, id=19, 761.84625pt x 593.96906pt>
+File: BrowserQuery.png Graphic file (type png)
+ <use BrowserQuery.png>
+Package pdftex.def Info: BrowserQuery.png used on input line 68.
+(pdftex.def)             Requested size: 437.82227pt x 341.33922pt.
+
+<CURLQuery.png, id=20, 761.84625pt x 593.96906pt>
+File: CURLQuery.png Graphic file (type png)
+ <use CURLQuery.png>
+Package pdftex.def Info: CURLQuery.png used on input line 75.
+(pdftex.def)             Requested size: 437.82227pt x 341.33922pt.
+ [4]
+<scoreCenterOutput.png, id=27, 532.23843pt x 380.17032pt>
+File: scoreCenterOutput.png Graphic file (type png)
+ <use scoreCenterOutput.png>
+Package pdftex.def Info: scoreCenterOutput.png used on input line 89.
+(pdftex.def)             Requested size: 437.82227pt x 312.73944pt.
+ [5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science
+/Homework Assignments/Assignment 01/BrowserQuery.png>] <Q3-Graph.png, id=32, 520.94624pt x 470.75874pt>
+File: Q3-Graph.png Graphic file (type png)
+ <use Q3-Graph.png>
+Package pdftex.def Info: Q3-Graph.png used on input line 105.
+(pdftex.def)             Requested size: 437.82227pt x 395.64296pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10.95 A strongly con-nected com-po-nent
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10.95 Tendrils con-tain pages that can-not
+ []
+
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.bbl" [6 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 F
+all           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 01/CURLQuery.png>] [7 <C:/Users/Corre
+n/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignmen
+ts/Assignment 01/scoreCenterOutput.png>] [8 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall       
+    - CS 895 Introduction to Web Science/Homework Assignments/Assignment 01/Q3-Graph.png>]) [9
+
+]
+Appendix A.
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\graphSource.r") [10
+
+]
+Appendix B.
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\scoreCenterSource.py"
+Overfull \hbox (36.6581pt too wide) in paragraph at lines 144--144
+[]        \OT1/cmtt/m/n/10.95 teamName={0: "Exit", 1:"Old Dominion", 2:"Florida", 3:"Virginia Tech", 4:"Penn St"}[] 
+ []
+
+
+Overfull \hbox (53.90416pt too wide) in paragraph at lines 144--144
+[]            \OT1/cmtt/m/n/10.95 #convert the entered value to an integer to match the key of our associative array[] 
+ []
+
+[11
+
+]
+Overfull \hbox (13.66335pt too wide) in paragraph at lines 144--144
+[]        \OT1/cmtt/m/n/10.95 scoreboardOption={0:"Exit", 1:"2013 Season (Week 2)", 2:"2013 Season (Week 1)",[] 
+ []
+
+
+Overfull \hbox (25.16072pt too wide) in paragraph at lines 144--144
+[]            \OT1/cmtt/m/n/10.95 #convert the entered value to an integer to match the keys of parameters list[] 
+ []
+
+
+Overfull \hbox (30.90941pt too wide) in paragraph at lines 144--144
+[]            \OT1/cmtt/m/n/10.95 scoreboardOption=int(raw_input("Choose the matchup for " + p_teamName+" >> "))[] 
+ []
+
+
+Overfull \hbox (19.41203pt too wide) in paragraph at lines 144--144
+[]             \OT1/cmtt/m/n/10.95 print "Update frequency must be a number greater than 0. Please try again."[] 
+ []
+
+[12]
+Overfull \hbox (25.16072pt too wide) in paragraph at lines 144--144
+[]            \OT1/cmtt/m/n/10.95 for visitingTeam in soup.html.body.findAll('div',{'class' : 'team visitor'}):[] 
+ []
+
+
+Overfull \hbox (25.16072pt too wide) in paragraph at lines 144--144
+[]                \OT1/cmtt/m/n/10.95 visitingScore=visitingTeam.find('li', {'class' : 'final'}).string.strip()[] 
+ []
+
+
+Overfull \hbox (2.16597pt too wide) in paragraph at lines 144--144
+[]                \OT1/cmtt/m/n/10.95 visitingTeamsRec[gameNumber] = visitingTeamName + " " + visitingScore[] 
+ []
+
+[13]) [14]
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 01\assignment01.aux") ) 
+Here is how much of TeX's memory you used:
+ 2010 strings out of 494045
+ 29291 string characters out of 3145966
+ 88054 words of memory out of 3000000
+ 5275 multiletter control sequences out of 15000+200000
+ 10537 words of font info for 37 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 30i,10n,21p,1927b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb>
+Output written on assignment01.pdf (15 pages, 910750 bytes).
+PDF statistics:
+ 92 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

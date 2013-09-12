@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}Assignment 1}{4}
+\contentsline {subsection}{\numberline {1.1}Question 1}{4}
+\contentsline {paragraph}{Problem}{4}
+\contentsline {paragraph}{Response}{4}
+\contentsline {subsection}{\numberline {1.2}Question 2}{4}
+\contentsline {paragraph}{Problem}{4}
+\contentsline {paragraph}{Response}{4}
+\contentsline {subsection}{\numberline {1.3}Question 3}{5}
+\contentsline {paragraph}{Problem}{5}
+\contentsline {paragraph}{Response}{6}
+\contentsline {chapter}{Appendices}{9}
+\contentsline {chapter}{\numberline {A}R Code for Bow-tie Graph}{10}
+\contentsline {chapter}{\numberline {B}Python Code for ScoreCenter}{11}
