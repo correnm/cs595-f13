@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  18 SEP 2013 21:56
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  22 SEP 2013 18:21
 entering extended mode
 **Assignment*02.tex
 
@@ -193,27 +193,67 @@ mework Assignments\Assignment 02\Assignment 02.lot")
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 62.
+(Font)              <9> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 62.
+(Font)              <5> on input line 41.
  [4]
-Overfull \hbox (350.58987pt too wide) in paragraph at lines 66--74
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|$\OT1/cmtt/m/n/10.95 <[]http : / / http : / / mementoproxy . cs . odu . edu / aggr / timemap / link / http : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|$\OT1/cmtt/m/n/10.95 <[]http : / / mementoproxy . cs . odu . edu / aggr / timegate / http : / / investmentwatchblog .
+ com / >[] ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|$\OT1/cmtt/m/n/10.95 <[]http : / / web . archive . org / web / 20100212220649 / http : / / investmentwatchblog . com 
+/ >[] ; rel =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|$\OT1/cmtt/m/n/10.95 <[]http : / / web . archive . org / web / 20100409065504 / http : / / investmentwatchblog . com 
+/ >[] ; rel =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|$\OT1/cmtt/m/n/10.95 <[]http : / / web . archive . org / web / 20100415152016 / http : / / investmentwatchblog . com 
+/ ? >[] ;rel =
  []
 
 <mementoHistogram.png, id=25, 1518.67375pt x 677.53125pt>
 File: mementoHistogram.png Graphic file (type png)
  <use mementoHistogram.png>
-Package pdftex.def Info: mementoHistogram.png used on input line 81.
-(pdftex.def)             Requested size: 486.47249pt x 217.03152pt.
+Package pdftex.def Info: mementoHistogram.png used on input line 80.
+(pdftex.def)             Requested size: 437.82227pt x 195.32114pt.
+ [5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science
+/Homework Assignments/Assignment 02/mementoHistogram.png>] <CarbonDateSampleOutput.png, id=30, 721.94719pt x 542.025pt>
+File: CarbonDateSampleOutput.png Graphic file (type png)
+ <use CarbonDateSampleOutput.png>
+Package pdftex.def Info: CarbonDateSampleOutput.png used on input line 94.
+(pdftex.def)             Requested size: 437.82227pt x 328.7077pt.
 
-No file Assignment*02.bbl.
-[5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/
-Homework Assignments/Assignment 02/mementoHistogram.png>]
+<scatterplot.png, id=31, 517.935pt x 396.48125pt>
+File: scatterplot.png Graphic file (type png)
+ <use scatterplot.png>
+Package pdftex.def Info: scatterplot.png used on input line 114.
+(pdftex.def)             Requested size: 437.82227pt x 335.1715pt.
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 02\Assignment 02.bbl" [6 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 
+Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 02/CarbonDateSampleOutput.png>]
+[7 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/
+Homework Assignments/Assignment 02/scatterplot.png>]) [8
+
+]
 Appendix A.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 02\extractLinks.py" [6
+mework Assignments\Assignment 02\extractLinks.py" [9
 
 ]
 Overfull \hbox (2.16597pt too wide) in paragraph at lines 125--125
@@ -230,29 +270,46 @@ Overfull \hbox (30.90941pt too wide) in paragraph at lines 125--125
 []                \OT1/cmtt/m/n/10.95 # Return the last URL for each domain the URL list. By definition, the key[] 
  []
 
-[7]) [8]
+[10]) [11]
 Appendix B.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 02\getTimeMaps.py" [9
+mework Assignments\Assignment 02\getTimeMaps.py" [12
 
-] [10]) [11]
+] [13]) [14]
 Appendix C.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 02\histogram.r") [12
+mework Assignments\Assignment 02\histogram.r") [15
+
+]
+Appendix D.
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 02\estimateAge.py"
+Overfull \hbox (19.41203pt too wide) in paragraph at lines 51--51
+[]    \OT1/cmtt/m/n/10.95 ageFile.write("URI" + "," + "Mementos" + "," + "Creation Date" + "," + "Age" +'\n');[] 
+ []
+
+[16
+
+]) [17]
+Appendix E.
+
+("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
+mework Assignments\Assignment 02\uri_age.r") [18
 
 ]
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
 mework Assignments\Assignment 02\Assignment 02.aux") ) 
 Here is how much of TeX's memory you used:
- 1986 strings out of 494045
- 28838 string characters out of 3145966
- 86039 words of memory out of 3000000
- 5252 multiletter control sequences out of 15000+200000
+ 2011 strings out of 494045
+ 30246 string characters out of 3145966
+ 88085 words of memory out of 3000000
+ 5267 multiletter control sequences out of 15000+200000
  11616 words of font info for 41 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,9n,21p,1623b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,11n,21p,1854b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
@@ -260,9 +317,9 @@ cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "Assignment 02.pdf" (13 pages, 163617 bytes).
+Output written on "Assignment 02.pdf" (19 pages, 247451 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

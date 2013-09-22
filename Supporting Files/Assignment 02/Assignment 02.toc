@@ -6,8 +6,10 @@
 \contentsline {subsection}{\numberline {2.2}Response}{4}
 \contentsline {section}{\numberline {3}Question 3}{5}
 \contentsline {subsection}{\numberline {3.1}Problem}{5}
-\contentsline {subsection}{\numberline {3.2}Response}{5}
-\contentsline {chapter}{Appendices}{5}
-\contentsline {chapter}{\numberline {A}Python Source for extractLinks.py}{6}
-\contentsline {chapter}{\numberline {B}Python Source for getTimeMaps.py}{9}
-\contentsline {chapter}{\numberline {C}R Source for Histogram}{12}
+\contentsline {subsection}{\numberline {3.2}Response}{6}
+\contentsline {chapter}{Appendices}{8}
+\contentsline {chapter}{\numberline {A}Python Source for extractLinks.py}{9}
+\contentsline {chapter}{\numberline {B}Python Source for getTimeMaps.py}{12}
+\contentsline {chapter}{\numberline {C}R Source for Histogram}{15}
+\contentsline {chapter}{\numberline {D}Python Source for estimateAge.py}{16}
+\contentsline {chapter}{\numberline {E}R Source for Scatterplot}{18}

@@ -1,0 +1,1 @@
+{"status_code": 200, "data": {"link_lookup": [{"url": "http://investmentwatchblog.com/", "aggregate_link": "http://bit.ly/aecRrL"}]}, "status_txt": "OK"}
