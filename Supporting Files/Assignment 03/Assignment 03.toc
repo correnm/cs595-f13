@@ -9,6 +9,6 @@
 \contentsline {subsection}{\numberline {3.2}Response}{7}
 \contentsline {section}{\numberline {4}Question 4 Extra Credit}{7}
 \contentsline {subsection}{\numberline {4.1}Problem}{7}
-\contentsline {subsection}{\numberline {4.2}Response}{8}
+\contentsline {subsection}{\numberline {4.2}Response}{7}
 \contentsline {chapter}{Appendices}{10}
 \contentsline {chapter}{\numberline {A}Source getHTMLSource Script}{11}

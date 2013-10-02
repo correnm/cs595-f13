@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  1 OCT 2013 20:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  2 OCT 2013 18:48
 entering extended mode
 **Assignment*03.tex
 
@@ -213,18 +213,18 @@ File: GoogleEstimatedSize.png Graphic file (type png)
 
 <use GoogleEstimatedSize.png>
 Package pdftex.def Info: GoogleEstimatedSize.png used on input line 72.
-(pdftex.def)             Requested size: 486.47249pt x 396.9371pt.
+(pdftex.def)             Requested size: 291.88646pt x 238.16379pt.
  <SyriaQueryHitsGoogle.png, id=20, 471.26062pt x 359.84438pt>
 File: SyriaQueryHitsGoogle.png Graphic file (type png)
 
 <use SyriaQueryHitsGoogle.png>
 Package pdftex.def Info: SyriaQueryHitsGoogle.png used on input line 79.
-(pdftex.def)             Requested size: 486.47249pt x 371.46196pt.
+(pdftex.def)             Requested size: 291.88646pt x 222.88156pt.
  <tfidf.png, id=21, 320.19624pt x 200.75pt>
 File: tfidf.png Graphic file (type png)
  <use tfidf.png>
 Package pdftex.def Info: tfidf.png used on input line 86.
-(pdftex.def)             Requested size: 243.23624pt x 152.50111pt.
+(pdftex.def)             Requested size: 194.58601pt x 121.99783pt.
  [4] [5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Sci
 ence/Homework Assignments/Assignment 03/GoogleEstimatedSize.png>] [6 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD
 /Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 03/SyriaQueryHitsGoogl
@@ -234,18 +234,16 @@ File: CheckPageRank.png Graphic file (type png)
  <use CheckPageRank.png>
 Package pdftex.def Info: CheckPageRank.png used on input line 120.
 (pdftex.def)             Requested size: 291.88646pt x 273.8614pt.
- [7]
-<Kendall.png, id=40, 532.23843pt x 413.29407pt>
+ [7 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science
+/Homework Assignments/Assignment 03/CheckPageRank.png>] <Kendall.png, id=40, 532.23843pt x 413.29407pt>
 File: Kendall.png Graphic file (type png)
  <use Kendall.png>
-Package pdftex.def Info: Kendall.png used on input line 174.
+Package pdftex.def Info: Kendall.png used on input line 175.
 (pdftex.def)             Requested size: 340.52925pt x 264.43161pt.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 03\Assignment 03.bbl" [8 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 
-Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 03/CheckPageRank.png>] [9 <C:/Users/
-Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assi
-gnments/Assignment 03/Kendall.png>]) [10
+mework Assignments\Assignment 03\Assignment 03.bbl" [8] [9 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2
+013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 03/Kendall.png>]) [10
 
 ]
 Appendix A.
@@ -263,7 +261,7 @@ Here is how much of TeX's memory you used:
  5305 multiletter control sequences out of 15000+200000
  12306 words of font info for 43 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,9n,21p,1339b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,9n,21p,1340b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
@@ -272,7 +270,7 @@ e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on "Assignment 03.pdf" (12 pages, 525827 bytes).
+Output written on "Assignment 03.pdf" (12 pages, 525939 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

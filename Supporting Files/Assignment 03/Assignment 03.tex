@@ -69,21 +69,21 @@
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=1.00\textwidth]{GoogleEstimatedSize.png}
+		\includegraphics[width=0.60\textwidth]{GoogleEstimatedSize.png}
 	\caption{Estimated Size of Google's Index}
 	\label{fig:GoogleEstimatedSize}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=1.00\textwidth]{SyriaQueryHitsGoogle.png}
+		\includegraphics[width=0.60\textwidth]{SyriaQueryHitsGoogle.png}
 	\caption{Query Hits for Syria}
 	\label{fig:SyriaQueryHitsGoogle}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=0.50\textwidth]{tfidf.png}
+		\includegraphics[width=0.40\textwidth]{tfidf.png}
 	\caption{TFIDF Equation}
 	\label{fig:tfidf}
 \end{figure}
@@ -99,10 +99,10 @@
     0.0999 & 0.0149 & 6.7021 & \url{http://www.hhassan.com}                \\ \hline
     0.0838 & 0.0125 & 6.7021 & \url{http://carlsonsperspective.tumblr.com} \\ \hline
     0.0771 & 0.0115 & 6.7021 & \url{http://bigbluerock.wordpress.com}      \\ \hline						
-    0.0623 & 0.0093 & 6.7021 & \url{http://www.nationaljournal.com}        \\ \hline
+    0.0623 & 0.0093 & 6.7021 & \url{http://www.nationaljournal.com/reporters/bio/15}        \\ \hline
     0.0617 & 0.0092 & 6.7021 & \url{http://brown-moses.blogspot.co.uk}     \\ \hline		
     0.0422 & 0.0063 & 6.7021 & \url{http://goglobalmedia.com}              \\ \hline
-    0.0261 & 0.0039 & 6.7021 & \url{http://zamanalwsl.net}                 \\ \hline
+    0.0261 & 0.0039 & 6.7021 & \url{http://zamanalwsl.net/en}                 \\ \hline
     \end{tabular}
     \caption {10 Hits for the term "Syria", ranked by TFIDF}
 			\label{tab:TFIDF-Rank}
@@ -113,7 +113,7 @@
 \section{Question 3}
 \subsection{Problem}Rank the same 10 URIs from question 2, but this time by their PageRank (PR) using any of the free PR estimators on the web. Normalize the returned values to be between 0 and 1.0. Create a table which ranks the URIs by decreasing page rank. Briefly compare and contrast the rankings produced in questions 2 and 3.
 
-\subsection{Response}We submitted each of the URIs to the Google PageRank tool (\url{http://www.checkpagerank.net/}). According to the site, ``Google PageRank (Google PR) is one of the methods Google uses to determine a page's relevance or importance. Important pages receive a higher PageRank and are more likely to appear at the top of the search results.'' The page rank is reported on a scale of 0 to 10 (e.g., 5/10) which we have converted to decimal so the values are between 0 and 1.  Google PR was unable to obtain a ranking for one of the URIs, NA as opposed to 0, which could indicate the site had never been indexed. A representation of the tool is shown in Figure \ref{fig:CheckPageRank}. The final rankings are shown in Table \ref{tab:PageRank}. A comparison of the TFIDF and PageRank outcomes reveals that only one URI, \url{http://goglobalmedia.com}, retained the same position in both lists. This may be more coincidental than a result of any other factors. It is difficult to compare the two methodologies because they are based on different criteria. As stated by Croft \cite{croft2010search}, TFIDF ``reflects the importance of a term in the collection of documents.'' On the other hand, page rank rates poularity based on the number and quality of the links to a particular site.
+\subsection{Response}We submitted each of the URIs to the Google PageRank tool (\url{http://www.checkpagerank.net/}). According to the site, ``Google PageRank (Google PR) is one of the methods Google uses to determine a page's relevance or importance. Important pages receive a higher PageRank and are more likely to appear at the top of the search results.'' The page rank is reported on a scale of 0 to 10 (e.g., 5/10) which we have converted to decimal so the values are between 0 and 1.  Google PR was unable to obtain a ranking for one of the URIs, NA as opposed to 0, which could indicate the site had never been indexed. A representation of the tool is shown in Figure \ref{fig:CheckPageRank}. The final rankings are shown in Table \ref{tab:PageRank}. A comparison of the TFIDF and PageRank outcomes reveals that only one URI, \url{http://goglobalmedia.com}, retained the same position in both lists. This may be more coincidental than a result of any other factors. It is difficult to compare the two methodologies because they are based on different criteria. As stated by Croft \cite{croft2010search}, TFIDF ``reflects the importance of a term in the collection of documents.'' On the other hand, page rank rates popularity based on the number and quality of the links to a particular site.
 
 \begin{figure}[htbp]
 	\centering
@@ -128,10 +128,10 @@
     \begin{tabular}{|r|l|}
     \hline
     Page Rank & URI                                   \\ \hline
-    0.07& \url{http://www.nationaljournal.com}        \\ \hline		
+    0.07& \url{http://www.nationaljournal.com/reporters/bio/153}        \\ \hline		
 		0.05& \url{http://beta.syriadeeply.org}           \\ \hline
 		0.05& \url{http://AmericanSyrians.com}            \\ \hline
-    0.04& \url{http://zamanalwsl.net}                 \\ \hline
+    0.04& \url{http://zamanalwsl.net/en}                 \\ \hline
 		0.04& \url{http://brown-moses.blogspot.co.uk}     \\ \hline		
     0.03& \url{http://www.islamicinvitationturkey.com}\\ \hline				
     0.03& \url{http://carlsonsperspective.tumblr.com} \\ \hline
@@ -146,17 +146,18 @@
 %%%%%%%%%%Chapter Exercises
 \section{Question 4 Extra Credit}
 \subsection{Problem}Compute the Kendall Tau\_b score for both lists. Report both the Tau value and the ``p'' value.
-\subsection{Response}We used online statistics software to calculate Kendall Tau\_b. The software developed by Wessa\cite{Wessa2012} implements the R Kendall library. For the first input vector, we used the numerical ranking of URIs, by TFIDF, sorted in ascending order. For the second vector, we used the numerical ranking corresponding to the URIs associated page rank. The data source is shown in Table \ref{tab:Kendall}. While the TFIDF rankings were unique, we encountered three ties among the page rank data. The output from the R calculations, Figure \ref{fig:Kendall}, shows a Kendall value of 0.2611 and a p-value of 0.3964. This indicates a 26 percent probability that the two ranking methods will produce the same ordering for the given set of URIs. It's more likely for the rankings to diverge. The p-value represents the confidence interval or statistical significance of tau. Our calculated value is greater than the generally accepted level of 0.05 which seems to strongly suggest that we should not expect similar rankings from TFIDF and Page Rank.
+\subsection{Response}We used online statistics software to calculate Kendall Tau\_b. The software developed by Wessa\cite{Wessa2012} implements the R Kendall library. For the first input vector, we used the numerical ranking of URIs, by TFIDF, sorted in ascending order. For the second vector, we used the numerical ranking corresponding to the URIs associated page rank. The data source is shown in Table \ref{tab:Kendall}. While the TFIDF rankings were unique, we encountered three ties among the page rank data. The output from the R calculations, Figure \ref{fig:Kendall}, shows a Kendall value of 0.2611 and a p-value of 0.3964. This indicates a 26 percent probability that the two ranking methods will produce the same ordering for the given set of URIs. It's more likely for the rankings to diverge. The p-value represents the confidence interval or statistical significance of tau. Our calculated value is significantly higher than the generally accepted level of 0.05 which seems to strongly suggest that we should not expect similar rankings from TFIDF and Page Rank. These results are consistent with what is evidenced in Tables \ref{tab:TFIDF-Rank} and \ref{tab:PageRank}.
+
 
 \begin{table}
 	\centering
     \begin{tabular}{|r|r|l|}
     \hline
     TFIDF 	& Page Rank     & URI                            \\ \hline
-    1				& 5 	& \url{http://zamanalwsl.net}                 \\ \hline
+    1				& 5 	& \url{http://zamanalwsl.net/en}                 \\ \hline
     2				& 1 	& \url{http://goglobalmedia.com}              \\ \hline
     3				& 5 	& \url{http://brown-moses.blogspot.co.uk}     \\ \hline		
-    4				& 9 	& \url{http://www.nationaljournal.com}        \\ \hline
+    4				& 9 	& \url{http://http://www.nationaljournal.com/reporters/bio/153}        \\ \hline
     5				& 2 	& \url{http://bigbluerock.wordpress.com}      \\ \hline						
     6				& 3 	& \url{http://carlsonsperspective.tumblr.com} \\ \hline
     7				& NA 	& \url{http://www.hhassan.com}                \\ \hline
