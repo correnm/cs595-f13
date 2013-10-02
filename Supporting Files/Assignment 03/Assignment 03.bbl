@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{Wessa2012}
+Kendall tau rank correlation (v1.0.11) in free statistics software
+  (v1.1.23-r7).
+\newblock \url{http://www.wessa.net/rwasp_kendall.wasp/}.
+\newblock Accessed: 2013-09-30.
+
+\bibitem{croft2010search}
+W.~B. Croft, D.~Metzler, and T.~Strohman.
+\newblock {\em Search engines: Information retrieval in practice}.
+\newblock Addison-Wesley Reading, 2010.
+
+\bibitem{levene2011introduction}
+M.~Levene.
+\newblock {\em An introduction to search engines and web navigation}.
+\newblock Wiley. com, 2011.
+
+\end{thebibliography}

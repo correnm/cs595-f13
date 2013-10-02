@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Question 1}{4}
+\contentsline {subsection}{\numberline {1.1}Problem}{4}
+\contentsline {subsection}{\numberline {1.2}Response}{4}
+\contentsline {section}{\numberline {2}Question 2}{4}
+\contentsline {subsection}{\numberline {2.1}Problem}{4}
+\contentsline {subsection}{\numberline {2.2}Response}{4}
+\contentsline {section}{\numberline {3}Question 3}{4}
+\contentsline {subsection}{\numberline {3.1}Problem}{4}
+\contentsline {subsection}{\numberline {3.2}Response}{7}
+\contentsline {section}{\numberline {4}Question 4 Extra Credit}{7}
+\contentsline {subsection}{\numberline {4.1}Problem}{7}
+\contentsline {subsection}{\numberline {4.2}Response}{8}
+\contentsline {chapter}{Appendices}{10}
+\contentsline {chapter}{\numberline {A}Source getHTMLSource Script}{11}

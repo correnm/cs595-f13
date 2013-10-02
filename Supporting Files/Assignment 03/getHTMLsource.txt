@@ -1,0 +1,18 @@
+\begin{verbatim}
+#!/bin/bash
+while read line
+do
+uri=$line
+output=$line
+
+#Extract just the top level domain name for the output file name
+output=`echo "$output" | awk -F/ '{print $3}' `
+echo $output
+#Download the source for the URI
+lynx -source $uri > `echo $output `
+
+# Remove the HTML markup
+lynx -dump -force_html $output > `echo $output.processed`
+# input the 1000 Twitter URIs
+done < tweetFile1000.txt
+\end{verbatim}
