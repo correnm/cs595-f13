@@ -74,7 +74,7 @@ Put the resulting graphs in your report.
 \end{itemize}
 We then created a project in Gephi to visualize the network mapping. After importing the `dot' file, we performed the following steps as outlined in a Gephi tutorial\footnote{\url{http://pegasusdata.com/2013/01/10/facebook-friends-network-mapping-a-gephi-tutorial/}}.
 \begin{itemize}
-\item First, we eliminated any noise in the model by reducing the network to its largest component. This step eliminated about 100 node pairs from the graph. These nodes could not be reached from any other nodes.
+\item First, we eliminated any noise in the model by applying a filter to reduce the network to its largest component. This step eliminated about 100 node pairs from the graph. These nodes could not be reached from any other nodes.
 \item Second, we experimented with the node size by varying the size based on the degree.
 \item Third, for the initial layout, we started with the Fruchterman Reingold algorithm, which uses attraction-repulsion.  This algorithm allowed us to see the initial formation of any communities.
 \item Fourth, we used the Force Atlas 2 algorithm to further disperse the groups and add space around the larger nodes.
