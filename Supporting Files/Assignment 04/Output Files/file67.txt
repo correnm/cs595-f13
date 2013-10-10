@@ -1,0 +1,5 @@
+site:
+http://www.redneckjournal.com/
+links:
+http://www.facebook.com/RedneckJournal
+http://twitter.com/RedneckJournal

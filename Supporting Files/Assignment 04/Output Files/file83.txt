@@ -1,0 +1,10 @@
+site:
+http://scoutcommsusa.com/
+links:
+https://twitter.com/ScoutComms
+http://digitalnature.eu/
+http://www.linkedin.com/company/scoutcomms
+http://wordpress.org/
+https://www.youtube.com/user/ScoutCommsTV
+http://www.philippinette.com
+https://www.facebook.com/ScoutComms

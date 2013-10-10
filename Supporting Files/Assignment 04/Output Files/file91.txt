@@ -1,0 +1,5 @@
+site:
+http://earltomlinson.com/
+links:
+http://www.register.com
+mailto:earl@earltomlinson.com

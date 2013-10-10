@@ -1,0 +1,8 @@
+site:
+http://www.atlanticcouncil.org/
+links:
+http://www.youtube.com/atlanticcouncil
+http://www.facebook.com/AtlanticCouncil
+https://www.atlanticcouncil.org/en/support
+http://www.twitter.com/AtlanticCouncil
+http://www.acsummit.org

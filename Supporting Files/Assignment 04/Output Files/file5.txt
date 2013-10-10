@@ -1,0 +1,9 @@
+site:
+http://www.motherjones.com/
+links:
+https://secure.motherjones.com/fnp/?action=SUBSCRIPTION&list_source=STOPNV&a_edition_code=P
+https://secure.motherjones.com/fnp/?action=SUBSCRIPTION&list_source=SHOMEP&a_edition_code=P
+https://secure.motherjones.com/fnp/?action=SUBSCRIPTION&sub_type=GIFT&list_source=YHOMEP
+https://secure.motherjones.com/fnp/?action=SUBSERV&sub_serv=1
+http://www.amazon.com/Mother-Jones/dp/B008E88JUI
+https://secure.motherjones.com/fnp/?action=SUBSCRIPTION&list_source=7H10TOPNV&extra_don=1

@@ -1,0 +1,7 @@
+site:
+http://www.myitworks.com/
+links:
+http://static.myitworks.com/pdf/ItWorksPolicies-July-2013.pdf
+http://www.facebook.com/itworksglobal
+http://twitter.com/itworksglobal
+https://loyalcustomers.myitworks.com/Shop

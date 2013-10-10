@@ -1,0 +1,8 @@
+site:
+http://FTMoore.com/
+links:
+http://AuthorFTMoore.wordpress.com
+http://twitter.com/FTMoore1
+http://www.amazon.com/Copper-Hollow-F-T-Moore/dp/0972536817/
+mailto:Author@FTMoore.com
+http://www.startlogic.com/
