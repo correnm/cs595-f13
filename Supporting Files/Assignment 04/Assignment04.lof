@@ -1,10 +1,14 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Twitter Network Grouped by Modularity Class}}{5}
-\contentsline {figure}{\numberline {2}{\ignorespaces Modularity Legend}}{5}
-\contentsline {figure}{\numberline {3}{\ignorespaces Authority Distribution}}{6}
-\contentsline {figure}{\numberline {4}{\ignorespaces Hubs Distribution}}{6}
-\contentsline {figure}{\numberline {5}{\ignorespaces Network Diameter - Betweeness}}{7}
-\contentsline {figure}{\numberline {6}{\ignorespaces Network Diameter - Closeness}}{7}
-\contentsline {figure}{\numberline {7}{\ignorespaces Network - Eccentricity}}{8}
-\contentsline {figure}{\numberline {8}{\ignorespaces Connected Components}}{8}
+\contentsline {figure}{\numberline {2}{\ignorespaces Modularity Legend}}{6}
+\contentsline {figure}{\numberline {3}{\ignorespaces PageRank}}{6}
+\contentsline {figure}{\numberline {4}{\ignorespaces HITS - Authority Distribution}}{7}
+\contentsline {figure}{\numberline {5}{\ignorespaces HITS - Hubs Distribution}}{7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Avg Degree - Degree Distribution}}{8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Avg Degree - Indegree Distribution}}{8}
+\contentsline {figure}{\numberline {8}{\ignorespaces Avg Degree - Out Degree Distribution}}{9}
+\contentsline {figure}{\numberline {9}{\ignorespaces Network Diameter - Betweenness}}{9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Network Diameter - Closeness}}{10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Network Diameter - Eccentricity}}{10}
+\contentsline {figure}{\numberline {12}{\ignorespaces Connected Components}}{11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

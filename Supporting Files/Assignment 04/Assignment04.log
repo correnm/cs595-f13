@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  9 OCT 2013 20:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  10 OCT 2013 21:13
 entering extended mode
 **Assignment04.tex
 
@@ -186,97 +186,112 @@ mework Assignments\Assignment 04\Assignment04.lof")
  [2
 
 ]
-Overfull \hbox (13.66335pt too wide) in paragraph at lines 55--55
-[]\OT1/cmtt/m/n/10.95 "http://investmentwatchblog.com/"->"http://forum.bytesforall.com/"  [label="WP Forum"];[] 
- []
-
-
-Overfull \hbox (36.6581pt too wide) in paragraph at lines 55--55
-[]\OT1/cmtt/m/n/10.95 "http://investmentwatchblog.com/"->"http://twitter.com/#!/investwatchblog"  [label="None"];[] 
- []
-
-
-Overfull \hbox (19.41203pt too wide) in paragraph at lines 55--55
-[]\OT1/cmtt/m/n/10.95 "http://investmentwatchblog.com/"->"http://www.bytesforall.com/"  [label="BytesForAll"];[] 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 75.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
 
-<ModularityClassGraph.png, id=22, 1027.84pt x 1027.84pt>
+[3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 78.
+ [4] <ModularityClassGraph.png, id=26, 1027.84pt x 1027.84pt>
 File: ModularityClassGraph.png Graphic file (type png)
  <use ModularityClassGraph.png>
-Package pdftex.def Info: ModularityClassGraph.png used on input line 87.
+Package pdftex.def Info: ModularityClassGraph.png used on input line 99.
 (pdftex.def)             Requested size: 291.88646pt x 291.88664pt.
 
-<ModularityLegend.png, id=24, 344.78813pt x 308.65312pt>
+<ModularityLegend.png, id=28, 344.78813pt x 308.65312pt>
 File: ModularityLegend.png Graphic file (type png)
  <use ModularityLegend.png>
-Package pdftex.def Info: ModularityLegend.png used on input line 94.
+Package pdftex.def Info: ModularityLegend.png used on input line 106.
 (pdftex.def)             Requested size: 344.78728pt x 308.65236pt.
 
-<authorities.png, id=25, 602.25pt x 401.5pt>
-File: authorities.png Graphic file (type png)
- <use authorities.png>
-Package pdftex.def Info: authorities.png used on input line 101.
+<pageranks.png, id=29, 602.25pt x 401.5pt>
+File: pageranks.png Graphic file (type png)
+ <use pageranks.png>
+Package pdftex.def Info: pageranks.png used on input line 113.
 (pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
- <hubs.png, id=26, 602.25pt x 401.5pt>
+ <authorities.png, id=30, 602.25pt x 401.5pt>
+File: authorities.png Graphic file (type png)
+
+<use authorities.png>
+Package pdftex.def Info: authorities.png used on input line 120.
+(pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
+ <hubs.png, id=31, 602.25pt x 401.5pt>
 File: hubs.png Graphic file (type png)
  <use hubs.png>
-Package pdftex.def Info: hubs.png used on input line 108.
+Package pdftex.def Info: hubs.png used on input line 127.
 (pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
 
-<BetweennessCentralityDistribution.png, id=27, 602.25pt x 401.5pt>
+<DegreeDistribution.png, id=32, 602.25pt x 401.5pt>
+File: DegreeDistribution.png Graphic file (type png)
+ <use DegreeDistribution.png>
+Package pdftex.def Info: DegreeDistribution.png used on input line 134.
+(pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
+
+<IndegreeDistribution.png, id=33, 602.25pt x 401.5pt>
+File: IndegreeDistribution.png Graphic file (type png)
+ <use IndegreeDistribution.png>
+Package pdftex.def Info: IndegreeDistribution.png used on input line 142.
+(pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
+
+<OutDegreeDistribution.png, id=34, 602.25pt x 401.5pt>
+File: OutDegreeDistribution.png Graphic file (type png)
+ <use OutDegreeDistribution.png>
+Package pdftex.def Info: OutDegreeDistribution.png used on input line 150.
+(pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
+
+<BetweennessCentralityDistribution.png, id=35, 602.25pt x 401.5pt>
 File: BetweennessCentralityDistribution.png Graphic file (type png)
  <use BetweennessCentralityDistribution.png>
-Package pdftex.def Info: BetweennessCentralityDistribution.png used on input line 115.
+Package pdftex.def Info: BetweennessCentralityDistribution.png used on input line 158.
 (pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
 
-<ClosenessCentralityDistribution.png, id=28, 602.25pt x 401.5pt>
+<ClosenessCentralityDistribution.png, id=36, 602.25pt x 401.5pt>
 File: ClosenessCentralityDistribution.png Graphic file (type png)
  <use ClosenessCentralityDistribution.png>
-Package pdftex.def Info: ClosenessCentralityDistribution.png used on input line 122.
+Package pdftex.def Info: ClosenessCentralityDistribution.png used on input line 165.
 (pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
 
-<EccentricityDistribution.png, id=29, 602.25pt x 401.5pt>
+<EccentricityDistribution.png, id=37, 602.25pt x 401.5pt>
 File: EccentricityDistribution.png Graphic file (type png)
  <use EccentricityDistribution.png>
-Package pdftex.def Info: EccentricityDistribution.png used on input line 129.
+Package pdftex.def Info: EccentricityDistribution.png used on input line 172.
 (pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
 
-<cc-size-distribution.png, id=30, 602.25pt x 401.5pt>
+<cc-size-distribution.png, id=38, 602.25pt x 401.5pt>
 File: cc-size-distribution.png Graphic file (type png)
  <use cc-size-distribution.png>
-Package pdftex.def Info: cc-size-distribution.png used on input line 138.
+Package pdftex.def Info: cc-size-distribution.png used on input line 181.
 (pdftex.def)             Requested size: 291.88646pt x 194.5986pt.
 
 No file Assignment04.bbl.
-[4] [5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Scie
-nce/Homework Assignments/Assignment 04/ModularityClassGraph.png> <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Cou
-rses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/ModularityLegend.png>]
-[6 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/
-Homework Assignments/Assignment 04/authorities.png> <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fal
-l           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/hubs.png>] [7 <C:/Users/Corren/Docum
-ents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assi
-gnment 04/BetweennessCentralityDistribution.png> <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall  
-         - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/ClosenessCentralityDistribution.png>]
-[8 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/
-Homework Assignments/Assignment 04/EccentricityDistribution.png> <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Cou
-rses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/cc-size-distribution.pn
-g>]
+[5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/
+Homework Assignments/Assignment 04/ModularityClassGraph.png>] [6 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Cou
+rses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/ModularityLegend.png> <
+C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Home
+work Assignments/Assignment 04/pageranks.png>] [7 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall 
+          - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/authorities.png> <C:/Users/Corren/Docu
+ments/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Ass
+ignment 04/hubs.png>] [8 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introd
+uction to Web Science/Homework Assignments/Assignment 04/DegreeDistribution.png> <C:/Users/Corren/Documents/Universities
+/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/Indegre
+eDistribution.png>] [9 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduc
+tion to Web Science/Homework Assignments/Assignment 04/OutDegreeDistribution.png> <C:/Users/Corren/Documents/Universitie
+s/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/Betwee
+nnessCentralityDistribution.png>] [10 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - 
+CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/ClosenessCentralityDistribution.png> <C:/Users/Cor
+ren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Science/Homework Assignm
+ents/Assignment 04/EccentricityDistribution.png>] [11 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 F
+all           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 04/cc-size-distribution.png>]
 Appendix A.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 04\extractHREF.py" [9
+mework Assignments\Assignment 04\extractHREF.py" [12
 
 ]
 Overfull \hbox (25.16072pt too wide) in paragraph at lines 143--143
@@ -293,28 +308,28 @@ Overfull \hbox (19.41203pt too wide) in paragraph at lines 143--143
 []            \OT1/cmtt/m/n/10.95 print(siteKey, "Unduplicated:", len(links), "Full URI Count", str(numLinks))[] 
  []
 
-[10]
+[13]
 Overfull \hbox (25.16072pt too wide) in paragraph at lines 143--143
 []            \OT1/cmtt/m/n/10.95 # Raised when the user hits the interrupt key (normally Control-C or Delete).[] 
  []
 
-[11]) [12]
+[14]) [15]
 Appendix B.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 04\file1.txt") [13
+mework Assignments\Assignment 04\file1.txt") [16
 
 ]
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
 mework Assignments\Assignment 04\Assignment04.aux") ) 
 Here is how much of TeX's memory you used:
- 2035 strings out of 494045
- 29485 string characters out of 3145966
- 88071 words of memory out of 3000000
- 5297 multiletter control sequences out of 15000+200000
+ 2059 strings out of 494045
+ 30073 string characters out of 3145966
+ 88110 words of memory out of 3000000
+ 5317 multiletter control sequences out of 15000+200000
  11616 words of font info for 41 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,8n,21p,800b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,8n,21p,871b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
@@ -323,9 +338,9 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Assignment04.pdf (14 pages, 812325 bytes).
+Output written on Assignment04.pdf (17 pages, 859430 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

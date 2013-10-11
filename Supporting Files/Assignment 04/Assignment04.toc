@@ -4,9 +4,10 @@
 \contentsline {section}{\numberline {2}Question 2}{3}
 \contentsline {subsection}{\numberline {2.1}Problem}{3}
 \contentsline {subsection}{\numberline {2.2}Response}{3}
-\contentsline {section}{\numberline {3}Question 3}{3}
-\contentsline {subsection}{\numberline {3.1}Problem}{3}
+\contentsline {section}{\numberline {3}Question 3}{4}
+\contentsline {subsection}{\numberline {3.1}Problem}{4}
 \contentsline {subsection}{\numberline {3.2}Response}{4}
-\contentsline {chapter}{Appendices}{4}
-\contentsline {chapter}{\numberline {A}Python Source - extractHREF.py}{9}
-\contentsline {chapter}{\numberline {B}Sample URI file}{13}
+\contentsline {paragraph}{}{4}
+\contentsline {chapter}{Appendices}{5}
+\contentsline {chapter}{\numberline {A}Python Source - extractHREF.py}{12}
+\contentsline {chapter}{\numberline {B}Sample URI file}{16}
