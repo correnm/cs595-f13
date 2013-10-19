@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Assignment 05.tex
 
 [Frame0_View0,0]
-TopLine=112
-Cursor=7900
+TopLine=33
+Cursor=858
 
 [SessionInfo]
 FrameCount=1

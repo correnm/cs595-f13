@@ -1,19 +1,20 @@
-\contentsline {section}{\numberline {1}Question 1}{4}
-\contentsline {subsection}{\numberline {1.1}Problem}{4}
-\contentsline {subsection}{\numberline {1.2}Response}{4}
-\contentsline {paragraph}{}{4}
-\contentsline {section}{\numberline {2}Question 2}{5}
-\contentsline {subsection}{\numberline {2.1}Problem}{5}
-\contentsline {subsection}{\numberline {2.2}Response}{5}
+\contentsline {section}{\numberline {1}Question 1}{3}
+\contentsline {subsection}{\numberline {1.1}Problem}{3}
+\contentsline {subsection}{\numberline {1.2}Response}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {2}Question 2}{4}
+\contentsline {subsection}{\numberline {2.1}Problem}{4}
+\contentsline {subsection}{\numberline {2.2}Response}{4}
 \contentsline {paragraph}{}{5}
-\contentsline {section}{\numberline {3}Question 3 Extra Credit}{7}
-\contentsline {subsection}{\numberline {3.1}Problem}{7}
-\contentsline {subsection}{\numberline {3.2}Response}{7}
-\contentsline {section}{\numberline {4}Question 4 Extra Credit}{7}
-\contentsline {subsection}{\numberline {4.1}Problem}{7}
-\contentsline {subsection}{\numberline {4.2}Response}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {chapter}{Appendices}{7}
+\contentsline {section}{\numberline {3}Question 3 Extra Credit}{5}
+\contentsline {subsection}{\numberline {3.1}Problem}{5}
+\contentsline {subsection}{\numberline {3.2}Response}{5}
+\contentsline {section}{\numberline {4}Question 4 Extra Credit}{5}
+\contentsline {subsection}{\numberline {4.1}Problem}{5}
+\contentsline {subsection}{\numberline {4.2}Response}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {chapter}{Appendices}{8}
 \contentsline {chapter}{\numberline {A}Python Source - paradox.py}{9}
 \contentsline {chapter}{\numberline {B}Python Source - getFollowers.py}{11}
 \contentsline {chapter}{\numberline {C}Python Source - getFriends.py}{13}
