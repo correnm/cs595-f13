@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{arenas2008analysis}
+A.~Arenas, A.~Fernandez, and S.~Gomez.
+\newblock Analysis of the structure of complex networks at different resolution
+  levels.
+\newblock {\em New Journal of Physics}, 10(5):053039, 2008.
+
+\bibitem{girvan2001community}
+M.~Girvan and M.~E. Newman.
+\newblock Community structure in social and biological networks.
+\newblock {\em arXiv preprint cond-mat/0112110}, 2001.
+
+\bibitem{newman2004finding}
+M.~E. Newman and M.~Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical review E}, 69(2):026113, 2004.
+
+\bibitem{zachary1977information}
+W.~W. Zachary.
+\newblock An information flow model for conflict and fission in small groups.
+\newblock {\em Journal of anthropological research}, pages 452--473, 1977.
+
+\end{thebibliography}
