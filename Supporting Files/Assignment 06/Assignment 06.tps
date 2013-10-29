@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Assignment 06.tex
 
 [Frame0_View0,0]
-TopLine=157
-Cursor=11700
+TopLine=87
+Cursor=5769
 
 [Frame1]
 Flags=0

@@ -38,7 +38,7 @@
 %%%%%%%%%%Chapter Exercises
 \section{Question 1}
 \subsection{Problem}We know the result of the Karate Club (Zachary, 1977)\cite{zachary1977information} split. Prove or disprove that the result of split could have been predicted by the weighted graph of social interactions. How well does the mathematical model represent reality? Generously document your answer with all supporting equations, code, graphs, arguments, etc.
-\subsection{Response}We will proceed with a direct proof to determine whether a logical sequences of steps can reasonably generate the desired community structure. We are given the final network structure shown in Figure \ref{fig:zachary} which identifies membership in the two clubs after the division by the shaded and unshaded nodes. Even though the two groups are very interconnected, we must determine whether the structure itself provides enough information to predict the division between the group members.
+\subsection{Response}We will proceed with a direct proof to determine whether we can apply a known methodology in graph theory to reasonably generate the desired community structure. We are given the final network structure shown in Figure \ref{fig:zachary} which identifies membership in the two clubs after the division by the shaded and unshaded nodes. Even though the two groups are very interconnected, we must determine whether the structure itself provides enough information to predict the division between the group members.
 
 \begin{figure}[htbp]
 	\centering
@@ -68,31 +68,31 @@ To apply the algorithm, we used the weighted graph representation of the karate 
 \item Continues processing until either all edges are removed or the desired number of communities is obtained.
 \end{itemize}
 
-\indent{}The source code for the function is shown in Appendix \ref{chap:R}. The associated plot for each iteration of the algorithm is shown in Table \ref{tab:GirvanNewmanCommunityDetection}. When viewed from left to right, we see the edge with the highest level of betweenness is highlighted in red. The subsequent plot shows the impact of this edge's removal on the graph and the recalculation of betweenness. The final plot in the series shows a definitive separation of the graph into two distinct communities. 
+\indent{}The source code for the function is shown in Appendix \ref{chap:R}. The associated plot for each iteration of the algorithm is shown in Table \ref{tab:GirvanNewmanCommunityDetection}. When viewed from left to right, we see the edge with the highest level of betweenness is highlighted in red. The subsequent plot shows the impact of this edge's removal on the graph and the recalculation of betweenness. The final plot in the series shows a definitive separation of the graph into two distinct communities. We also see that just before the break a maximum betweenness of 280 was noted between nodes 2 and 14. This is consistent with Girvan-Newman's assertion about high traffic bridges.
 
 \begin{table}[htbp]
 	\centering
 		\begin{tabular}{ccc}
-			\includegraphics[scale=0.25]{karateClub-community-0001.png} &
-			\includegraphics[scale=0.25]{karateClub-community-0002.png} & 
-			\includegraphics[scale=0.25]{karateClub-community-0003.png} \\
-			\includegraphics[scale=0.25]{karateClub-community-0004.png} &
-			\includegraphics[scale=0.25]{karateClub-community-0005.png} & 
-			\includegraphics[scale=0.25]{karateClub-community-0006.png} \\
-			\includegraphics[scale=0.25]{karateClub-community-0007.png} &
-			\includegraphics[scale=0.25]{karateClub-community-0008.png} & 
-			\includegraphics[scale=0.25]{karateClub-community-0009.png} \\
-			\includegraphics[scale=0.25]{karateClub-community-0010.png} &
-			\includegraphics[scale=0.25]{karateClub-community-0011.png} & 
-			\includegraphics[scale=0.25]{karateClub-community-0012.png} \\
-			\includegraphics[scale=0.25]{karateClub-community-0013.png} &
+			\includegraphics[scale=0.28]{karateClub-community-0001.png} &
+			\includegraphics[scale=0.28]{karateClub-community-0002.png} & 
+			\includegraphics[scale=0.28]{karateClub-community-0003.png} \\
+			\includegraphics[scale=0.28]{karateClub-community-0004.png} &
+			\includegraphics[scale=0.28]{karateClub-community-0005.png} & 
+			\includegraphics[scale=0.28]{karateClub-community-0006.png} \\
+			\includegraphics[scale=0.28]{karateClub-community-0007.png} &
+			\includegraphics[scale=0.28]{karateClub-community-0008.png} & 
+			\includegraphics[scale=0.28]{karateClub-community-0009.png} \\
+			\includegraphics[scale=0.28]{karateClub-community-0010.png} &
+			\includegraphics[scale=0.28]{karateClub-community-0011.png} & 
+			\includegraphics[scale=0.28]{karateClub-community-0012.png} \\
+			\includegraphics[scale=0.28]{karateClub-community-0013.png} &
 			&  \\
 		\end{tabular}
 	\caption{Girvan-Newman Community Detection}
 	\label{tab:GirvanNewmanCommunityDetection}
 \end{table}
 
-\indent{}Table \ref{tab:Evaluation} shows a comparison of the nodes in each cluster using Girvan-Newman to the known structure in Figure \ref{fig:zachary}. In the graph, node 1 is the instructor, Mr. Hi, while node 34 is the student officer. Three discrepancies in the assignments are noted with members 3, 9 and 14. The graph theory cannot predict subjective behavior or the affect of outside influences that cannot be measured. In this case, we know that the student represented by node 9 joined the instructor's club because he was only a few weeks away from obtaining his black belt. To join the officer's club, as suggested by the graph, would have meant starting over; thereby forfeiting three years of training. No exceptional circumstances were noted for members 3 and 14. Despite these small discrepancies, the Girvan-Newman algorithm achieved a 91\% hit ratio in assigning members to their respective community.
+\indent{}Table \ref{tab:Evaluation} shows a comparison of the nodes in each cluster using Girvan-Newman to the known structure in Figure \ref{fig:zachary}. In the graph, node 1 is the instructor, Mr. Hi, while node 34 is the student officer. Three discrepancies in the assignments are noted with members 3, 9 and 14. The graph theory cannot predict subjective behavior or the affect of outside influences that cannot be measured. In this case, we know that the student represented by node 9 joined the instructor's club because he was only a short period away from obtaining his black belt. To join the officer's club, as suggested by the graph, would have meant starting over; thereby forfeiting three years of training. No exceptional circumstances were noted for members 3 and 14. Despite these small discrepancies, the Girvan-Newman algorithm achieved a 91\% hit ratio in assigning members to their respective community.
 
 \begin{table}
     \begin{tabular}{|l|l|l|l|}
@@ -139,7 +139,7 @@ To apply the algorithm, we used the weighted graph representation of the karate 
 	\label{tab:Evaluation}
 \end{table}
 
-As a final step, we would like to also apply an objective measure of the quality of the community divisions we obtained.  Newman \cite{newman2004finding} defines modularity (Q) as one ``measure of the quality of a particular division of a network.'' In his analysis of complex networks, Arenas \cite{arenas2008analysis} explains further that ``the modularity of a given partition is the probability of having edges falling within modules in the network minus the expected probability in an equivalent (random) network with the same number of nodes.'' In other words, we want to determine if the model performed better than a random assignment. A larger value for modularity indicates a strong community structure. While modularity can have a range of -1 to +1, Newman \cite{newman2004finding} indicates that Q values ``typically fall in the range from about 0.3 to 0.7.  Higher values are rare.'' The modularity function which we invoked in ``R'' is defined by the following mathematical equation where \emph{e} is an edge and \emph{a} is an element of the matrix. Our final plot in Table \ref{tab:GirvanNewmanCommunityDetection} shows a maximized Q value of 0.449 which when combined with our high hit ratio does indicate that the mathematical model can reasonably predict the actual karate club split.
+As a final step, we would like to also apply an objective measure of the quality of the community divisions we obtained.  Newman \cite{newman2004finding} defines modularity (Q) as one ``measure of the quality of a particular division of a network.'' In his analysis of complex networks, Arenas \cite{arenas2008analysis} explains further that ``the modularity of a given partition is the probability of having edges falling within modules in the network minus the expected probability in an equivalent (random) network with the same number of nodes.'' In other words, we want to determine if the model performed better than a random assignment. A larger value for modularity indicates a strong community structure. While modularity can have a range of -1 to +1, Newman \cite{newman2004finding} indicates that Q values ``typically fall in the range from about 0.3 to 0.7.  Higher values are rare.'' The modularity function which we invoked in ``R'' is defined by the following mathematical equation where \emph{e} is an edge and \emph{a} is an element of the matrix. Our final plot in Table \ref{tab:GirvanNewmanCommunityDetection} shows a maximized Q value of 0.449 which when combined with our high hit ratio does indicate that edge betweenness can reasonably predict the actual karate club split.
 \begin{equation}
 Q = \sum (e_{ij} - a^{2}_{i}) 
 \end{equation}
