@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="yes"?>
+
+<DynamicMetaNetwork id="karate">
+   <MetaNetwork id="karate">
+      <sources>
+         <source id="karate.gml"/></sources>
+      <nodes>
+         <nodeclass type="Agent" id="agent">
+            <node id="1"/>
+            <node id="2"/>
+            <node id="3"/>
+            <node id="4"/>
+            <node id="5"/>
+            <node id="6"/>
+            <node id="7"/>
+            <node id="8"/>
+            <node id="9"/>
+            <node id="10"/>
+            <node id="11"/>
+            <node id="12"/>
+            <node id="13"/>
+            <node id="14"/>
+            <node id="15"/>
+            <node id="16"/>
+            <node id="17"/>
+            <node id="18"/>
+            <node id="19"/>
+            <node id="20"/>
+            <node id="21"/>
+            <node id="22"/>
+            <node id="23"/>
+            <node id="24"/>
+            <node id="25"/>
+            <node id="26"/>
+            <node id="27"/>
+            <node id="28"/>
+            <node id="29"/>
+            <node id="30"/>
+            <node id="31"/>
+            <node id="32"/>
+            <node id="33"/>
+            <node id="34"/></nodeclass>
+      </nodes>
+      <networks>
+         <network sourceType="Agent" source="agent" targetType="Agent" target="agent" id="agent x agent">
+            <link source="2" target="1"/>
+            <link source="3" target="1"/>
+            <link source="3" target="2"/>
+            <link source="4" target="1"/>
+            <link source="4" target="2"/>
+            <link source="4" target="3"/>
+            <link source="5" target="1"/>
+            <link source="6" target="1"/>
+            <link source="7" target="1"/>
+            <link source="7" target="5"/>
+            <link source="7" target="6"/>
+            <link source="8" target="1"/>
+            <link source="8" target="2"/>
+            <link source="8" target="3"/>
+            <link source="8" target="4"/>
+            <link source="9" target="1"/>
+            <link source="9" target="3"/>
+            <link source="10" target="3"/>
+            <link source="11" target="1"/>
+            <link source="11" target="5"/>
+            <link source="11" target="6"/>
+            <link source="12" target="1"/>
+            <link source="13" target="1"/>
+            <link source="13" target="4"/>
+            <link source="14" target="1"/>
+            <link source="14" target="2"/>
+            <link source="14" target="3"/>
+            <link source="14" target="4"/>
+            <link source="17" target="6"/>
+            <link source="17" target="7"/>
+            <link source="18" target="1"/>
+            <link source="18" target="2"/>
+            <link source="20" target="1"/>
+            <link source="20" target="2"/>
+            <link source="22" target="1"/>
+            <link source="22" target="2"/>
+            <link source="26" target="24"/>
+            <link source="26" target="25"/>
+            <link source="28" target="3"/>
+            <link source="28" target="24"/>
+            <link source="28" target="25"/>
+            <link source="29" target="3"/>
+            <link source="30" target="24"/>
+            <link source="30" target="27"/>
+            <link source="31" target="2"/>
+            <link source="31" target="9"/>
+            <link source="32" target="1"/>
+            <link source="32" target="25"/>
+            <link source="32" target="26"/>
+            <link source="32" target="29"/>
+            <link source="33" target="3"/>
+            <link source="33" target="9"/>
+            <link source="33" target="15"/>
+            <link source="33" target="16"/>
+            <link source="33" target="19"/>
+            <link source="33" target="21"/>
+            <link source="33" target="23"/>
+            <link source="33" target="24"/>
+            <link source="33" target="30"/>
+            <link source="33" target="31"/>
+            <link source="33" target="32"/>
+            <link source="34" target="9"/>
+            <link source="34" target="10"/>
+            <link source="34" target="14"/>
+            <link source="34" target="15"/>
+            <link source="34" target="16"/>
+            <link source="34" target="19"/>
+            <link source="34" target="20"/>
+            <link source="34" target="21"/>
+            <link source="34" target="23"/>
+            <link source="34" target="24"/>
+            <link source="34" target="27"/>
+            <link source="34" target="28"/>
+            <link source="34" target="29"/>
+            <link source="34" target="30"/>
+            <link source="34" target="31"/>
+            <link source="34" target="32"/>
+            <link source="34" target="33"/></network>
+      </networks>
+   </MetaNetwork>
+</DynamicMetaNetwork>
+
