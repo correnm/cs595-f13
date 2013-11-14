@@ -1,0 +1,362 @@
+\documentclass[letterpaper,11pt]{report}
+% Change margins to 1 inch on all sides
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{footnote}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{tablefootnote}
+\usepackage{tabularx}
+\usepackage{url}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%%%%%%%%%%Start of report
+\begin{document} 
+\begin{savenotes}
+\pagestyle{plain}
+\title{CS896 Introduction to Web Science\\Fall 2013\\Report for Assignment 8}
+\author{Corren G. McCoy}
+ 
+\date{November 14, 2013}
+\maketitle
+
+\renewcommand*\thesection{\arabic{section}}
+\setcounter{section}{0}
+
+\setcounter{tocdepth}{4}
+\tableofcontents
+ \listoftables
+\newpage
+
+
+%%%%%%%%%%Chapter Exercises
+\section{Question 1}
+\subsection{Problem}The goal of this project is to use the basic recommendation principles we have learned for user-collected data. You will modify the code given to you which performs movie recommendations from the MovieLense data sets. You are to modify recommendations.py to answer the following questions. Each question your program answers correctly will award you 10 points. You must have the question answered completely correct; partial credit will only be awarded if your answer is very close to the correct one.
+
+\subsection{Methodology}We used the Python source code for determining user and item similarity as found in Segaran, 2007\cite{segaran2007programming}. Since many of the questions for this project are suitable for database queries, we incorporated the SQLite\footnote{\url{http://sqlite.org/}} library. The product's web site describes it as `a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.' The modified source code for \emph{recommendations.py} is shown in Appendix \ref{chap:python}. For those particular responses which were obtained using an SQL query, we have noted the query statement in addition to the response.
+
+\subsection{Query Responses}
+\begin{enumerate}
+
+\item What 5 movies have the highest average ratings? Show the movies and their ratings sorted by their average ratings.
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem 
+where udata.movie_id = uitem.movie_id 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc, 4 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+		    \hline
+    Movie Id & Movie Title                          & Avg. Rating & No. Raters \\ \hline
+    1189     & Prefontaine (1997)                   & 5.0         & 3          \\ \hline
+    1293     & Star Kid (1997)                      & 5.0         & 3          \\ \hline
+    1467     & Saint of Fort Washington, The (1993) & 5.0         & 2          \\ \hline
+    1500     & Santa with Muscles (1996)            & 5.0         & 2          \\ \hline
+    1449     & Pather Panchali (1955)               & 4.625       & 8          \\ \hline
+    \end{tabular}
+    \caption {Highest Average Ratings}
+			\label{tab:HighestRatings}
+\end{table}
+
+\item What 5 movies received the most ratings? Show the movies and the number of ratings sorted by number of ratings.
+
+\begin{verbatim}
+select uitem.movie_id,  movie_title, count(*) 
+from udata, uitem 
+where udata.movie_id = uitem.movie_id 
+group by uitem.movie_id, movie_title 
+order by 3 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+    Movie Id & Movie Title               & No. Ratings \\ \hline
+    50       & Star Wars (1977)          & 583         \\ \hline
+    258      & Contact (1997)            & 509         \\ \hline
+    100      & Fargo (1996)              & 508         \\ \hline
+    181      & Return of the Jedi (1983) & 507         \\ \hline
+    294      & Liar Liar (1997           & 485         \\ \hline
+    \end{tabular}
+    \caption {Movies with Most Ratings}
+			\label{tab:MostRatings}
+\end{table}
+
+
+\item What 5 movies were rated the highest on average by women? Show the movies and their ratings sorted by ratings.
+
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem, uuser 
+where udata.movie_id = uitem.movie_id 
+and uuser.user_id = udata.user_id 
+and uuser.gender='F' 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc, 4 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Movie Id & Movie Title                                             & Avg. Rating & No. Raters \\ \hline
+    50       & Mina Tannenbaum (1994)                                  & 5.0         & 2          \\ \hline
+    258      & Schindler's List (1993)                                 & 4.633       & 79         \\ \hline
+    100      & Close Shave, A (1995)                                   & 4.632       & 19         \\ \hline
+    181      & Shawshank Redemption, The (1994)                        & 4.563       & 64         \\ \hline
+    294      & Wallace \& Gromit: The Best of Aardman Animation (1996) & 4.533       & 15         \\ \hline
+    \end{tabular}
+    \caption {Highest on Average by Women}
+		\label{tab:HighWomen}
+\end{table}
+
+\item What 5 movies were rated the highest on average by men? Show the movies and their ratings sorted by ratings.
+
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem, uuser 
+where udata.movie_id = uitem.movie_id 
+and uuser.user_id = udata.user_id 
+and uuser.gender='M' 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc, 4 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Movie Id & Movie Title                          & Avg. Rating & No. Raters \\ \hline
+    1293     & Star Kid (1997)                      & 5.0         & 3          \\ \hline
+    1175     & Hugo Pool (1997)                     & 5.0         & 2          \\ \hline
+    1189     & Prefontaine (1997)                   & 5.0         & 2          \\ \hline
+    1467     & Saint of Fort Washington, The (1993) & 5.0         & 2          \\ \hline
+    1500     & Santa with Muscles (1996)            & 5.0         & 2          \\ \hline
+    \end{tabular}
+    \caption {Highest on Average by Men}
+				\label{tab:HighMen}
+\end{table}
+
+\item What movie received ratings most like Top Gun? Which movie received ratings that were least like Top Gun (negative correlation)?
+
+\begin{verbatim}
+recommendations.topMatches(movieprefs,"Top Gun (1986)",1)
+[(1.0000000000000027, 'Shiloh (1997)')]
+
+recommendations.worstMatches(movieprefs,"Top Gun (1986)",1)
+[(-1.0000000000000007, 'Babysitter, The (1995)')]
+\end{verbatim}
+
+\item Which 5 raters rated the most films? Show the raters' IDs and the number of films each rated.
+\begin{verbatim}
+select user_id, count(*) as count 
+from udata 
+group by user_id 
+order by 2 DESC 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|}
+    \hline
+    User ID & No. Films Rated \\ \hline
+    405     & 737             \\ \hline
+    655     & 685             \\ \hline
+    13      & 636             \\ \hline
+    450     & 540             \\ \hline
+    270     & 518             \\ \hline
+    \end{tabular}
+    \caption {Most Film Ratings}
+\end{table}
+
+\item Which 5 raters most agreed with each other? Show the raters' IDs and Pearson's r, sorted by r.
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+    \hline
+    "Me" & User ID & R                  & User ID & R                 & User ID & R                 & User ID & R                 & Cum. Diff.         \\ \hline
+    772  & 889     & 1.0000000000000047 & 899     & 1.000000000000004 & 780     & 1.000000000000004 & 277     & 1.000000000000004 & -1.66533453694e-14 \\ \hline
+    135  & 810     & 1.000000000000004  & 79      & 1.000000000000004 & 552     & 1.000000000000004 & 351     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
+    139  & 879     & 1.000000000000004  & 610     & 1.000000000000004 & 607     & 1.000000000000004 & 278     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
+    170  & 764     & 1.000000000000004  & 292     & 1.000000000000004 & 257     & 1.000000000000004 & 238     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
+    191  & 733     & 1.000000000000004  & 60      & 1.000000000000004 & 517     & 1.000000000000004 & 170     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
+    \end{tabular}
+    \caption {Most Similar Raters}
+\end{table}
+
+\item Which 5 raters most disagreed with each other (negative correlation)? Show the raters' IDs and Pearson's r, sorted by r.
+\begin{verbatim}
+These user ratings most disagreed
+928 [(-1.000000000000004, '547'), (-1.000000000000004, '432'), (-1.000000000000004, '317'), (-1.000000000000004, '112')] 8.0
+86 [(-1.000000000000004, '756'), (-1.000000000000004, '630'), (-1.000000000000004, '251'), (-1.000000000000004, '196')] 8.0
+832 [(-1.000000000000004, '622'), (-1.000000000000004, '613'), (-1.000000000000004, '491'), (-1.000000000000004, '267')] 8.0
+794 [(-1.000000000000004, '799'), (-1.000000000000004, '740'), (-1.000000000000004, '469'), (-1.000000000000004, '129')] 8.0
+761 [(-1.000000000000004, '667'), (-1.000000000000004, '640'), (-1.000000000000004, '600'), (-1.000000000000004, '384')] 8.0
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|}
+    \hline
+    "Me"     & 928                 \\ \hline
+    User Id  & 547                 \\ \hline
+    R        & -1.000000000000004, \\ \hline
+    User ID  & 432                 \\ \hline
+    R        & -1.000000000000004, \\ \hline
+    User ID  & 317                 \\ \hline
+    R        & -1.000000000000004, \\ \hline
+    User Id  & 112                 \\ \hline
+    R        & -1.000000000000004, \\ \hline
+    Cum Diff & 8.0                 \\ \hline
+    \end{tabular}
+    \caption {Most Dissimilar Raters}
+\end{table}
+
+\item What movie was rated highest on average by men over 40? By men under 40?
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem, uuser 
+where udata.movie_id = uitem.movie_id 
+and uuser.user_id = udata.user_id 
+and uuser.gender='M' 
+and age >= 40 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc, 4 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Movie Id & Movie Title                            & Rating & No. Raters \\ \hline
+    1558     & Aparajito (1956)                       & 5.0    & 4          \\ \hline
+    1512     & World of Apu, The (Apur Sansar) (1959) & 5.0    & 3          \\ \hline
+    1293     & Star Kid (1997)                        & 5.0    & 2          \\ \hline
+    1302     & Late Bloomers (1996)                   & 5.0    & 2          \\ \hline
+    1449     & Pather Panchali (1955)                 & 4.8    & 5          \\ \hline
+    \end{tabular}
+    \caption {Highest Avg. Men Over 40}
+\end{table}
+
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem, uuser 
+where udata.movie_id = uitem.movie_id 
+and uuser.user_id = udata.user_id 
+and uuser.gender='M' 
+and age < 40 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc, 4 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Movie Id & Movie Title                                 & Rating & No. Raters \\ \hline
+    1175     & Hugo Pool (1997)                            & 5.0    & 2          \\ \hline
+    1467     & Saint of Fort Washington, The (1993)        & 5.0    & 2          \\ \hline
+    1500     & Santa with Muscles (1996)                   & 5.0    & 2          \\ \hline
+    1167     & Sum of Us, The (1994)                       & 4.5    & 4          \\ \hline
+    851      & Two or Three Things I Know About Her (1966) & 4.5    & 2          \\ \hline
+    \end{tabular}
+    \caption {Highest Avg. Men Under 40}
+\end{table}
+\item What movie was rated highest on average by women over 40? By women under 40?
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem, uuser 
+where udata.movie_id = uitem.movie_id 
+and uuser.user_id = udata.user_id 
+and uuser.gender='F' 
+and age >= 40 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc, 4 desc 
+limit 5;
+\end{verbatim}
+
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Movie Id & Movie Title                            & Rating & No. Raters \\ \hline
+    904      & Ma vie en rose (My Life in Pink) (1997 & 5.0    & 3          \\ \hline
+    169      & Wrong Trousers, The (1993)             & 5.0    & 2          \\ \hline
+    1203     & Top Hat (1935)                         & 5.0    & 2          \\ \hline
+    1194     & Once Were Warriors (1994)              & 4.8    & 5          \\ \hline
+    241      & Last of the Mohicans, The (1992)       & 4.667  & 3          \\ \hline
+    \end{tabular}
+    \caption {Highest Avg. Women Over 40}
+\end{table}
+
+\begin{verbatim}
+select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
+from udata, uitem, uuser 
+where udata.movie_id = uitem.movie_id 
+and uuser.user_id = udata.user_id 
+and uuser.gender='F' 
+and age < 40 
+group by uitem.movie_id, movie_title 
+having count(*) > 1 
+order by 3 desc,4 desc 
+limit 5;
+\end{verbatim}
+
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Movie Id & Movie Title                                                 & Rating & No. Raters \\ \hline
+    113      & Horseman on the Roof, The (Hussard sur le toit, Le) (1995)  & 5.0    & 2          \\ \hline
+    1153     & Backbeat (1993)                                             & 5.0    & 2          \\ \hline
+    114      & Wallace \& Gromit: The Best of Aardman Animation (1996)     & 5.0    & 11         \\ \hline
+    320      & Paradise Lost: The Child Murders at Robin Hood Hills (1996) & 4.819  & 5          \\ \hline
+    1084     & Anne Frank Remembered (1995)                                & 4.8    & 5          \\ \hline
+    \end{tabular}
+    \caption {Highest Avg. Women Under 40}
+\end{table}
+\end{enumerate}
+
+
+
+\end{savenotes}
+
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{cmccoy}
+
+\appendix
+\addcontentsline{toc}{chapter}{Appendices}
+
+%%Appendix A
+\chapter{Python Source} \label{chap:python}
+\input{recommendations.py}
+
+
+\end{document} 
+%%%%%%%%%%Ed of report
