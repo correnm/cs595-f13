@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Assignment 08.tex
 
 [Frame0_View0,0]
-TopLine=325
-Cursor=14677
+TopLine=381
+Cursor=15711
 
 [Frame1]
 Flags=0
@@ -35,7 +35,7 @@ Class=BibTeXView
 Document=cmccoy.bib
 
 [Frame1_View0,0]
-TopLine=61
+TopLine=60
 Cursor=2746
 
 [SessionInfo]

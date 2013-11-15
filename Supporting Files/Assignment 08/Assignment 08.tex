@@ -38,12 +38,21 @@
 \section{Question 1}
 \subsection{Problem}The goal of this project is to use the basic recommendation principles we have learned for user-collected data. You will modify the code given to you which performs movie recommendations from the MovieLense data sets. You are to modify recommendations.py to answer the following questions. Each question your program answers correctly will award you 10 points. You must have the question answered completely correct; partial credit will only be awarded if your answer is very close to the correct one.
 
-\subsection{Methodology}We used the Python source code for determining user and item similarity as found in Segaran, 2007\cite{segaran2007programming}. Since many of the questions for this project are suitable for database queries, we incorporated the SQLite\footnote{\url{http://sqlite.org/}} library. The product's web site describes it as `a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.' The modified source code for \emph{recommendations.py} is shown in Appendix \ref{chap:python}. For those particular responses which were obtained using an SQL query, we have noted the query statement in addition to the response.
+\subsection{Methodology}We used the Python source code for determining user and item similarity as found in Segaran, 2007\cite{segaran2007programming}. Since many of the questions for this project are suitable for database queries, we incorporated the SQLite\footnote{\url{http://sqlite.org/}} library. The product's web site describes it as `a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.' In addition to the provided core functionality, \emph{recommendations.py}, performs the following tasks:
+
+\begin{itemize}
+\item Creates a SQLite database and tables for the MovieLens files (u.data, u.item, u.user);
+\item Loads the MovieLens data and populates the database tables using insert statements;
+\item Calculates user-based and item-based similarity using the Pearson R correlation coefficient; and
+\item Uses the user-based metrics to rank groups of similar and dissimilar users.
+\end{itemize}
+
+\indent{}The modified source code is shown in Appendix \ref{chap:python}. For those particular responses which were obtained using an SQL query, we have noted the query statement in addition to the response. We applied a filter to ensure that high rankings obtained from the ratings of a single user were discarded. In cases where multiple records met the selection criteria, all of those records are shown in the response. It should be noted that while the expected range of values for the Pearson coefficient is +1 to -1, we did obtain correlation values greater than 1. This can most likely be attributed to Python's floating point arithmetic and internal precision. None of the Pearson scores presented in this report were truncated after calculation.
 
 \subsection{Query Responses}
 \begin{enumerate}
 
-\item What 5 movies have the highest average ratings? Show the movies and their ratings sorted by their average ratings.
+\item What 5 movies have the highest average ratings? Show the movies and their ratings sorted by their average ratings. (Table \ref{tab:HighestRatings})
 \begin{verbatim}
 select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
 from udata, uitem 
@@ -69,7 +78,7 @@ limit 5;
 			\label{tab:HighestRatings}
 \end{table}
 
-\item What 5 movies received the most ratings? Show the movies and the number of ratings sorted by number of ratings.
+\item What 5 movies received the most ratings? Show the movies and the number of ratings sorted by number of ratings. (Table \ref{tab:MostRatings})
 
 \begin{verbatim}
 select uitem.movie_id,  movie_title, count(*) 
@@ -96,7 +105,7 @@ limit 5;
 \end{table}
 
 
-\item What 5 movies were rated the highest on average by women? Show the movies and their ratings sorted by ratings.
+\item What 5 movies were rated the highest on average by women? Show the movies and their ratings sorted by ratings. (Table \ref{tab:HighWomen})
 
 \begin{verbatim}
 select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
@@ -110,7 +119,7 @@ order by 3 desc, 4 desc
 limit 5;
 \end{verbatim}
 
-\begin{table}[htbp]
+\begin{table}[h]
 \centering
     \begin{tabular}{|l|l|l|l|}
     \hline
@@ -125,7 +134,7 @@ limit 5;
 		\label{tab:HighWomen}
 \end{table}
 
-\item What 5 movies were rated the highest on average by men? Show the movies and their ratings sorted by ratings.
+\item What 5 movies were rated the highest on average by men? Show the movies and their ratings sorted by ratings. (Table \ref{tab:HighMen})
 
 \begin{verbatim}
 select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
@@ -164,7 +173,7 @@ recommendations.worstMatches(movieprefs,"Top Gun (1986)",1)
 [(-1.0000000000000007, 'Babysitter, The (1995)')]
 \end{verbatim}
 
-\item Which 5 raters rated the most films? Show the raters' IDs and the number of films each rated.
+\item Which 5 raters rated the most films? Show the raters' IDs and the number of films each rated. (Table \ref{tab:MostRatings})
 \begin{verbatim}
 select user_id, count(*) as count 
 from udata 
@@ -185,53 +194,95 @@ limit 5;
     270     & 518             \\ \hline
     \end{tabular}
     \caption {Most Film Ratings}
+		\label{tab:MostRatings}
 \end{table}
 
-\item Which 5 raters most agreed with each other? Show the raters' IDs and Pearson's r, sorted by r.
+\item Which 5 raters most agreed with each other? Show the raters' IDs and Pearson's r, sorted by r. (Tables \ref{tab:MostSimilar1} and \ref{tab:MostSimilar2})
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \centering
-    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
-    \hline
-    "Me" & User ID & R                  & User ID & R                 & User ID & R                 & User ID & R                 & Cum. Diff.         \\ \hline
-    772  & 889     & 1.0000000000000047 & 899     & 1.000000000000004 & 780     & 1.000000000000004 & 277     & 1.000000000000004 & -1.66533453694e-14 \\ \hline
-    135  & 810     & 1.000000000000004  & 79      & 1.000000000000004 & 552     & 1.000000000000004 & 351     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
-    139  & 879     & 1.000000000000004  & 610     & 1.000000000000004 & 607     & 1.000000000000004 & 278     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
-    170  & 764     & 1.000000000000004  & 292     & 1.000000000000004 & 257     & 1.000000000000004 & 238     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
-    191  & 733     & 1.000000000000004  & 60      & 1.000000000000004 & 517     & 1.000000000000004 & 170     & 1.000000000000004 & -1.59872115546e-14 \\ \hline
-    \end{tabular}
-    \caption {Most Similar Raters}
-\end{table}
+\begin{tabular}{|l|l|l|l|}
+\hline
+    ~          & Group 1            & Group 2            & Group 3            \\ \hline
+    My User ID & 772                & 135                & 139                \\ \hline
+    User ID 1  & 889                & 810                & 879                \\ \hline
+    Pearson    & 1.0000000000000047 & 1.000000000000004  & 1.000000000000004  \\ \hline
+    User ID 2  & 899                & 79                 & 610                \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004  & 1.000000000000004  \\ \hline
+    User ID 3  & 780                & 552                & 607                \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004  & 1.000000000000004  \\ \hline
+    User ID 4  & 277                & 351                & 278                \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004  & 1.000000000000004  \\ \hline
+    Cum. Diff  & -1.66533453694e-14 & -1.59872115546e-14 & -1.59872115546e-14 \\ \hline
+\end{tabular}
+\caption{Most Similar Raters}
+\label{tab:MostSimilar1}
+\end{table*}
 
-\item Which 5 raters most disagreed with each other (negative correlation)? Show the raters' IDs and Pearson's r, sorted by r.
-\begin{verbatim}
-These user ratings most disagreed
-928 [(-1.000000000000004, '547'), (-1.000000000000004, '432'), (-1.000000000000004, '317'), (-1.000000000000004, '112')] 8.0
-86 [(-1.000000000000004, '756'), (-1.000000000000004, '630'), (-1.000000000000004, '251'), (-1.000000000000004, '196')] 8.0
-832 [(-1.000000000000004, '622'), (-1.000000000000004, '613'), (-1.000000000000004, '491'), (-1.000000000000004, '267')] 8.0
-794 [(-1.000000000000004, '799'), (-1.000000000000004, '740'), (-1.000000000000004, '469'), (-1.000000000000004, '129')] 8.0
-761 [(-1.000000000000004, '667'), (-1.000000000000004, '640'), (-1.000000000000004, '600'), (-1.000000000000004, '384')] 8.0
-\end{verbatim}
-
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \centering
-    \begin{tabular}{|l|l|}
-    \hline
-    "Me"     & 928                 \\ \hline
-    User Id  & 547                 \\ \hline
-    R        & -1.000000000000004, \\ \hline
-    User ID  & 432                 \\ \hline
-    R        & -1.000000000000004, \\ \hline
-    User ID  & 317                 \\ \hline
-    R        & -1.000000000000004, \\ \hline
-    User Id  & 112                 \\ \hline
-    R        & -1.000000000000004, \\ \hline
-    Cum Diff & 8.0                 \\ \hline
-    \end{tabular}
-    \caption {Most Dissimilar Raters}
-\end{table}
+\begin{tabular}{|l|l|l|}
+\hline
+    ~          & Group 4            & Group 5               \\ \hline
+    My User ID & 170                & 191                   \\ \hline
+    User ID 1  & 764                & 733                   \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004     \\ \hline
+    User ID 2  & 292                & 60                    \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004     \\ \hline
+    User ID 3  & 257                & 517                   \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004     \\ \hline
+    User ID 4  & 238                & 170                   \\ \hline
+    Pearson    & 1.000000000000004  & 1.000000000000004     \\ \hline
+    Cum. Diff  & -1.59872115546e-14 & -1.59872115546e-14 \\ \hline
+\end{tabular}
+\caption{Most Similar Raters - cont'd}
+\label{tab:MostSimilar2}
+\end{table*}
 
-\item What movie was rated highest on average by men over 40? By men under 40?
+\item Which 5 raters most disagreed with each other (negative correlation)? Show the raters' IDs and Pearson's r, sorted by r. (Tables \ref{tab:MostDissimilar1} and \ref{tab:MostDissimilar2})
+
+\begin{table*}[htbp]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+    ~          & Group 1            & Group 2            & Group 3            \\ \hline
+    My User ID & 928                & 86                & 832                \\ \hline
+    User ID 1  & 547                & 756                & 622                \\ \hline
+    Pearson    & -1.000000000000004 &-1.000000000000004  & -1.000000000000004  \\ \hline
+    User ID 2  & 432                & 630                 & 613                \\ \hline
+    Pearson    & -1.000000000000004 & -1.000000000000004  & -1.000000000000004  \\ \hline
+    User ID 3  & 317                & 251                & 491                \\ \hline
+    Pearson    & -1.000000000000004  & -1.000000000000004  & -1.000000000000004 \\ \hline
+    User ID 4  & 112                & 196                & 267                \\ \hline
+    Pearson    & -1.000000000000004  & -1.000000000000004  & -1.000000000000004 \\ \hline
+    Cum. Diff  & 8.0 & 8.0 & 8.0 \\ \hline
+\end{tabular}
+\caption{Most Dissimilar Raters}
+\label{tab:MostDissimilar1}
+\end{table*}
+
+\begin{table*}[htbp]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+    ~          & Group 4            & Group 5               \\ \hline
+    My User ID & 794                & 761                   \\ \hline
+    User ID 1  & 799                & 667                   \\ \hline
+    Pearson    & -1.000000000000004 &-1.000000000000004   \\ \hline
+    User ID 2  & 740                & 640                    \\ \hline
+    Pearson    & -1.000000000000004 & -1.000000000000004    \\ \hline
+    User ID 3  & 469                & 600                   \\ \hline
+    Pearson    & -1.000000000000004  & -1.000000000000004   \\ \hline
+    User ID 4  & 129                & 384                   \\ \hline
+    Pearson    & -1.000000000000004  & -1.000000000000004   \\ \hline
+    Cum. Diff  & 8.0 & 8.0\\ \hline
+\end{tabular}
+\caption{Most Disimilar Raters - cont'd}
+\label{tab:MostDissimilar2}
+\end{table*}
+
+
+\item What movie was rated highest on average by men over 40? By men under 40? (Tables \ref{tab:Mover40} and \ref{tab:Munder40})
 \begin{verbatim}
 select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
 from udata, uitem, uuser 
@@ -257,6 +308,7 @@ limit 5;
     1449     & Pather Panchali (1955)                 & 4.8    & 5          \\ \hline
     \end{tabular}
     \caption {Highest Avg. Men Over 40}
+		\label{tab:Mover40}
 \end{table}
 
 \begin{verbatim}
@@ -284,8 +336,10 @@ limit 5;
     851      & Two or Three Things I Know About Her (1966) & 4.5    & 2          \\ \hline
     \end{tabular}
     \caption {Highest Avg. Men Under 40}
+				\label{tab:Munder40}
 \end{table}
-\item What movie was rated highest on average by women over 40? By women under 40?
+
+\item What movie was rated highest on average by women over 40? By women under 40? (Tables \ref{tab:Wover40} and \ref{tab:Wunder40})
 \begin{verbatim}
 select uitem.movie_id,  movie_title, round(avg(rating),3), count(*) 
 from udata, uitem, uuser 
@@ -312,6 +366,7 @@ limit 5;
     241      & Last of the Mohicans, The (1992)       & 4.667  & 3          \\ \hline
     \end{tabular}
     \caption {Highest Avg. Women Over 40}
+		\label{tab:Wover40}
 \end{table}
 
 \begin{verbatim}
@@ -339,9 +394,9 @@ limit 5;
     1084     & Anne Frank Remembered (1995)                                & 4.8    & 5          \\ \hline
     \end{tabular}
     \caption {Highest Avg. Women Under 40}
+		\label{tab:Wunder40}
 \end{table}
 \end{enumerate}
-
 
 
 \end{savenotes}
