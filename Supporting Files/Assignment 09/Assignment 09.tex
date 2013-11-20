@@ -1,0 +1,140 @@
+\documentclass[letterpaper,11pt]{report}
+% Change margins to 1 inch on all sides
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{footnote}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{tablefootnote}
+\usepackage{tabularx}
+\usepackage{url}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%%%%%%%%%%Start of report
+\begin{document} 
+\begin{savenotes}
+\pagestyle{plain}
+\title{CS896 Introduction to Web Science\\Fall 2013\\Report for Assignment 9}
+\author{Corren G. McCoy}
+ 
+\date{December 5, 2013}
+\maketitle
+
+\renewcommand*\thesection{\arabic{section}}
+\setcounter{section}{0}
+
+\setcounter{tocdepth}{4}
+\tableofcontents
+ \listoffigures
+ \listoftables
+\newpage
+
+
+%%%%%%%%%%Chapter Exercises
+\section{Question 1}
+\subsection{Problem}Create a blog-term matrix. Use the blog title as the identifier for each blog (and row of the matrix).  Use the terms from every item/title (RSS) or entry/title (Atom) for the columns of the matrix.  The values are the frequency of occurrence.  Essentially you are replicating the format of the ``blogdata.txt'' file included with the PCI book code.  Limit the number of terms to the most ``popular'' (i.e., frequent) 500 terms, this is *after* the criteria on p. 32 (slide 7) has been satisfied.
+\begin{itemize}
+\item \url{http://f-measure.blogspot.com/}
+\item \url{http://ws-dl.blogspot.com/}
+\end{itemize}
+
+\subsection{Response}We will use the techniques described in Segaran, 2007 \cite{segaran2007programming} to cluster a set of 100 blogs based on the number of times a particular word appears in the title of each blog. To generate the complete dataset needed for this problem, we used the two recommended blogs along with a prebuilt, supplementary dataset provided with the textbook material. The supplementary dataset contains 100 RSS URLs which represent the ``feeds for all of the most highly referenced blogs'' according to Segaran. The modified Python function \emph{generatefeedvector.py}, shown in Appendix \ref{chap:python}, performs the following tasks.
+\begin{itemize}
+\item Parse the XML for the RSS or ATOM feed using the Universal Feed Parser (\url{http://code.google.com/p/feedparser/}).
+\item Identify the blog entries using either the \emph{summary} or \emph{description} tag.
+\item Strip the HTML and returns a list of words. Sort the list in descending order based on the frequency.
+\item Eliminates common words based on a minimum and maximum frequency percentage (10 to 50\%) based on the accumulated word count in the feed list. We also applied a filter to ensure that only significant words, with a length of at least three characters, remain in the list.
+\item Extract the 500 most popular terms from the word list.
+\item Use the resulting list of words and the blog names to create the blog-term matrix (i.e.,blogdata.txt). The text file is included in the github supporting files for this assignment (\url{https://github.com/correnm/cs595-f13/tree/master/Supporting Files}.
+\end{itemize}
+
+%%%%%%%%%%Chapter Exercises
+\section{Question 2}
+\subsection{Problem}Create an ASCII and JPEG dendrogram that clusters (i.e., HAC) the most similar blogs (see slides 12 \& 13).  Include the JPEG in your report and upload the ascii file to github (it will be too unwieldy for inclusion in the report).
+
+\subsection{Response}We slightly modified the \emph{clusters.py} found in Segaran \cite{segaran2007programming} to adjust the dimensions and redirect the output when producing the dendrogram. The updated source code is shown in Appendix \ref{chap:python}. The complete ASCII version, \emph{ascii-dendrogram.txt}, is included in the github supporting files for this assignment (\url{https://github.com/correnm/cs595-f13/tree/master/Supporting Files}. An example of the clusters found in our set of blogs is shown below:
+
+\begin{verbatim}
+-
+  -
+    FOXNews.com
+    -
+      -
+        Online Marketing Report
+        -
+          Bloggers Blog
+          -
+            ShoeMoney
+            NewsBusters - Exposing Liberal Media Bias
+      -
+        flagrantdisregard
+        SpikedHumor - Today's Videos and Pictures
+  -
+    Michelle Malkin
+\end{verbatim}
+
+The graphical version of the dendrogram is shown in Figure \ref{fig:blogclust}.
+****** Note from PCI: The dashes represent a cluster of two or more  merged  items.  Here  you  see  a  great  example  of  finding  a  group;  it’s  also
+interesting to see that there is such a large chunk of search-related blogs in the most popular feeds. Looking through, you also should be able to spot clusters of political
+blogs, technology blogs, and blogs about blogging. You’ll also probably notice some anomalies. These writers may not have written on the same themes, but the clustering algorithm says that their word frequencies are correlated.  This  might  be  a  reflection  of  their  writing  style  or  could  simply  be  a coincidence based on the day that the data was downloaded.*****
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{blogclust.jpg}
+	\caption{JPEG Dendrogram}
+	\label{fig:blogclust}
+\end{figure}
+
+%%%%%%%%%%Chapter Exercises
+\section{Question 3}
+\subsection{Problem}Cluster the blogs using K-Means, using k=5, 10, 20. (see slide 18). How many interations were required for each value of k?
+\subsection{Response}We used functions in \emph{clusters.py} to apply k-means to hierarchical cluster for our set of blogs. We obtained the following results using various values for the number of clusters.
+
+\begin{itemize}
+\item When k=5, iterations=5
+\item When k=10, iterations=5
+\item When k=20, iterations=4
+\end{itemize}
+
+****PCI Note: K-means clustering begins with k randomly placed centroids (points in space that represent the center of the cluster), and assigns every item to the nearest one. After the  assignment,  the  centroids  are  moved  to  the  average  location  of  all  the  nodes assigned to them, and the assignments are redone. This process repeats until the assignments stop****
+
+%%%%%%%%%%Chapter Exercises
+\section{Question 4}
+\subsection{Problem}Use MDS to create a JPEG of the blogs similar to slide 29.  How many iterations were required?
+
+\subsection{Response}We used functions in \emph{clusters.py} to perform MDS. 156 iterations were required to produce the JPEG shown in Figure \ref{fig:blogs2d}.
+****PCI note: Figure 3-10 shows the outcome of the multidimensional scaling algorithm. The clusters don’t break out quite as well as they do on the dendrogram, but there’s still clearly  some  topical  grouping,  such  as  the  search-engine-related  set  near  the  top. These ended up very far away from the political and celebrity blogs. ***
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1.00\textwidth]{blogs2d.jpg}
+	\caption{MDS for Blogs}
+	\label{fig:blogs2d}
+\end{figure}
+
+\section{Question 5 Extra Credit}
+\subsection{Problem}Re-run question 2, but this time with proper TFIDF calculations instead of the hack discussed on slide 7 (p. 32).  Use the same 500 words, but this time replace their frequency count with TFIDF scores as computed in assignment \#3.  Document the code, techniques, methods, etc. used to generate these TFIDF values.  Upload the new data file to github. Compare and contrast the resulting dendrogram with the dendrogram from question \#2.
+\subsection{Response}Not attempted.
+
+\end{savenotes}
+
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{cmccoy}
+
+\appendix
+\addcontentsline{toc}{chapter}{Appendices}
+
+%%Appendix A
+\chapter{Python Source Code} \label{chap:python}
+\input{generatefeedvector.py}
+\input{clusters.py}
+
+
+\end{document} 
+%%%%%%%%%%Ed of report
