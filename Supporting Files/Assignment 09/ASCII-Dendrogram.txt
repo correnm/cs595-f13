@@ -1,195 +1,199 @@
 -
   -
-    FOXNews.com
     -
+      Pharyngula
       -
-        Online Marketing Report
-        -
-          Bloggers Blog
-          -
-            ShoeMoney
-            NewsBusters - Exposing Liberal Media Bias
-      -
-        flagrantdisregard
-        SpikedHumor - Today's Videos and Pictures
-  -
-    Michelle Malkin
-    -
-      O'Reilly Radar
-      -
-        Pharyngula
+        O'Reilly Radar
         -
           -
-            Sify.com
+            we make money not art
             -
-              ScienceDaily: Top Technology News
-              -
-                UMBC ebiquity
-                -
-                  Joho the Blog
-                  IBM Big Data Hub Blog
+              Cool Hunting
+              Copyblogger
           -
             -
               -
-                we make money not art
+                Creating Passionate Users
                 -
-                  Cool Hunting
-                  Copyblogger
+                  ThinkProgress
+                  Lifehack
               -
+                Schneier on Security
                 -
-                  gapingvoid: "cartoons drawn on the back of business cards"
                   -
+                    News
                     -
-                      Joi Ito's Web
                       -
-                        How to Change the World
-                        SimpleBits
-                    -
-                      Instapundit
+                        News | The Times
+                        -
+                          Breaking News: CBS News
+                          -
+                            FOXNews.com
+                            -
+                              NewsBusters - Exposing Liberal Media Bias
+                              -
+                                theGrio
+                                -
+                                  Michelle Malkin
+                                  Instapundit
                       -
                         -
-                          Captain's Quarters
+                          Editor's Blog
                           -
-                            PerezHilton
+                            MetaFilter
                             -
                               -
-                                TMZ.com
-                                Derek Powazek
-                              -
-                                Editor's Blog
+                                ScienceDaily: Top Technology News
                                 -
-                                  The Dish
+                                  UMBC ebiquity
+                                  -
+                                    Joho the Blog
+                                    IBM Big Data Hub Blog
+                              -
+                                Teche Blogs
+                                -
                                   -
                                     -
-                                      Go Fug Yourself
+                                      Techdirt.
                                       -
+                                        Autoblog
                                         -
-                                          Techdirt.
+                                          ReadWrite
                                           -
-                                            Seth Godin's Blog on marketing, tribes and respect
                                             -
                                               Topix Blog
                                               -
-                                                Autoblog
+                                                Washington Post: Breaking News, World, US, DC News & Analysis
                                                 -
+                                                  Web Science and Digital Libraries Research Group
                                                   -
-                                                    TUAW - The Unofficial Apple Weblog
+                                                    Boing Boing
                                                     -
-                                                      Joystiq
-                                                      Download Squad
-                                                  -
-                                                    ReadWrite
-                                                    -
-                                                      Neil Gaiman's Journal
+                                                      kottke.org
                                                       -
-                                                        Boing Boing
+                                                        Gothamist
                                                         -
-                                                          Gizmodo
+                                                          F-Measure
                                                           -
-                                                            kottke.org
-                                                            -
-                                                              Technology
-                                                              -
-                                                                Wired Top Stories
-                                                                Gothamist
-                                        -
-                                          Jeremy Zawodny's blog
-                                          -
-                                            Eschaton
+                                                            Wired Top Stories
+                                                            Technology
                                             -
+                                              TUAW - The Unofficial Apple Weblog
                                               -
-                                                Little Green Footballs
-                                                -
-                                                  Daily Kos
-                                                  Crooks and Liars
-                                              -
-                                                43 Folders
-                                                WIL WHEATON dot NET
+                                                Joystiq
+                                                Download Squad
                                     -
                                       -
-                                        Oilman
+                                        Derek Powazek
                                         -
+                                          Joel on Software
                                           -
-                                            @ProBlogger
-                                            John Battelle's Search Blog
-                                          -
-                                            The Viral Garden
-                                            -
-                                              PaulStamatiou.com - Tech News, Reviews and Guides
-                                              456 Berea Street
+                                            43 Folders
+                                            WIL WHEATON dot NET
                                       -
-                                        plasticbag.org
-                                        Steve Pavlina's Personal Development Blog
-                        -
-                          Wonkette
-                          -
-                            -
-                              BuzzMachine
-                              -
-                                Matt Cutts: Gadgets, Google, and SEO
-                                -
-                                  CNN.com - Technology
+                                        -
+                                          Top NBCNews headlines
+                                          -
+                                            The Dish
+                                            -
+                                              Little Green Footballs
+                                              -
+                                                Daily Kos
+                                                Crooks and Liars
+                                        -
+                                          The Virginian-Pilot
+                                          -
+                                            TMZ.com
+                                            PerezHilton
                                   -
                                     -
-                                      Quick Online Tips
-                                      -
-                                        Scobleizer
-                                        -
-                                          Search Engine Watch - Latest
-                                          -
-                                            Google Blogoscoped
-                                            -
-                                              The Official Google Blog
-                                              -
-                                                Google Operating System
-                                                -
-                                                  WebmasterWorld
-                                                  Search Engine Roundtable
+                                      Engadget RSS Feed
+                                      TechCrunch
                                     -
                                       Slashdot
                                       -
-                                        Mashable
                                         -
-                                          The Full Feed from HuffingtonPost.com
+                                          Quick Online Tips
                                           -
-                                            Valleywag
+                                            Search Engine Watch - Latest
                                             -
-                                              Lifehacker
+                                              Scobleizer
                                               -
-                                                Kotaku
+                                                Google Blogoscoped
                                                 -
-                                                  Deadspin
+                                                  The Official Google Blog
                                                   -
-                                                    The Superficial - Because You're Ugly
+                                                    Search Engine Roundtable
+                                                    -
+                                                      WebmasterWorld
+                                                      Google Operating System
+                                        -
+                                          Mashable
+                                          -
+                                            Lifehacker
+                                            -
+                                              The Full Feed from HuffingtonPost.com
+                                              -
+                                                The Superficial - Because You're Ugly
+                                                -
+                                                  Kotaku
+                                                  -
+                                                    Deadspin
                                                     Gawker
+                        -
+                          Wonkette
+                          Captain's Quarters
+                  -
+                    -
+                      456 Berea Street
+                      A Consuming Experience (full feed)
+                    -
+                      -
+                        -
+                          ESPN.com - NFL Draft Blog
+                          -
+                            ESPN.com - NFL Nation
                             -
-                              Publishing 2.0
-                              Valley News RSS Feeds
-                -
-                  mezzoblue
-                  -
-                    MetaFilter
-                    -
-                      ongoing by Tim Bray
+                              NFL.com Blogs
+                              NFL Gridiron Gab
+                        -
+                          BaseballBlogs
+                          -
+                            @ProBlogger
+                            John Battelle's Search Blog
                       -
-                        Signal vs. Noise
-                        Joel on Software
+                        ongoing by Tim Bray
+                        -
+                          Oilman
+                          -
+                            blog maverick
+                            -
+                              The Viral Garden
+                              -
+                                Matt Cutts: Gadgets, Google, and SEO
+                                -
+                                  BuzzMachine
+                                  -
+                                    Publishing 2.0
+                                    Valley News RSS Feeds
             -
-              Schneier on Security
+              Joi Ito's Web
               -
-                -
-                  A Consuming Experience (full feed)
-                  -
-                    CNET News.com
-                    -
-                      Teche Blogs
-                      -
-                        Engadget RSS Feed
-                        TechCrunch
-                -
-                  blog maverick
-                  -
-                    Creating Passionate Users
-                    -
-                      ThinkProgress
-                      Lifehack
+                SimpleBits
+                mezzoblue
+    -
+      -
+        / - latimes.com
+        Sify.com
+      -
+        CNN.com - Technology
+        -
+          flagrantdisregard
+          -
+            Blogs: Baseball
+            Bats
+  -
+    SpikedHumor - Today's Videos and Pictures
+    -
+      Bloggers Blog
+      ShoeMoney
