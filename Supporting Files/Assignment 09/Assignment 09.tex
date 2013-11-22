@@ -31,7 +31,6 @@
 \setcounter{tocdepth}{4}
 \tableofcontents
  \listoffigures
- \listoftables
 \newpage
 
 
@@ -43,7 +42,7 @@
 \item \url{http://ws-dl.blogspot.com/}
 \end{itemize}
 
-\subsection{Response}We will use the techniques described in Segaran, 2007 \cite{segaran2007programming} to cluster a set of 100 blogs based on the number of times a particular word appears in the title of each blog. To generate the complete dataset needed for this problem, we used the two recommended blogs along with a prebuilt, supplementary dataset provided with the textbook material. The supplementary dataset contains 100 RSS URLs which represent the ``feeds for all of the most highly referenced blogs'' according to Segaran. To facilitate clustering later, we randomly replaced approximately 25\% of the blogs in the supplementary dataset with blogs that represent sports (e.g., NFL, baseball), television and online news media, and technology. The modified Python function \emph{generatefeedvector.py}, shown in Appendix \ref{chap:python}, performs the following tasks.
+\subsection{Response}We will use the techniques described in Segaran \cite{segaran2007programming} to cluster a set of 100 blogs based on the number of times a particular word appears in the title of each blog. To generate the complete dataset needed for this problem, we used the two recommended blogs along with a pre-built, supplementary dataset provided with the textbook material. The supplementary dataset contains 100 RSS URLs which represent the ``feeds for all of the most highly referenced blogs'' according to Segaran. To facilitate clustering later, we randomly replaced approximately 25\% of the blogs in the supplementary dataset with blogs that represent sports (e.g., NFL, baseball), television and online news media, and technology. The modified Python function \emph{generatefeedvector.py}, shown in Appendix \ref{chap:python}, performs the following tasks.
 \begin{itemize}
 \item Parse the XML for the RSS or ATOM feed using the Universal Feed Parser (\url{http://code.google.com/p/feedparser/}).
 \item Identify the blog entries using either the \emph{summary} or \emph{description} tag.
@@ -76,7 +75,7 @@
                                 Technology
 \end{verbatim}
 																									
-As explained by Segaran, ``the dashes represent a cluster of two or more  merged  items.'' An examination of the ASCII dendrogram does, as expected, show definite clusters around the news and sport sites.  We also see a few of our news feeds clustered with other groups which could be an anomaly or indicative of the stories present on the day these blogs were downloaded. In either case, the correlation is based on the word frequency in the blogs. The graphical version of the dendrogram is shown in Figure \ref{fig:blogclust}.
+As explained by Segaran, ``the dashes represent a cluster of two or more  merged  items.'' An examination of the ASCII dendrogram does, as expected, show definite clusters around the news and sport sites we placed in the feed list.  We also see a few of our news feeds clustered with other non-news groups which could be an anomaly or indicative of the stories present on the day these blogs were downloaded. In either case, the correlation is based on the word frequency in the blogs. The graphical version of the dendrogram is shown in Figure \ref{fig:blogclust}.
 
 \begin{figure}
 	\centering
@@ -88,7 +87,7 @@ As explained by Segaran, ``the dashes represent a cluster of two or more  merged
 %%%%%%%%%%Chapter Exercises
 \section{Question 3}
 \subsection{Problem}Cluster the blogs using K-Means, using k=5, 10, 20. (see slide 18). How many interations were required for each value of k?
-\subsection{Response}We used functions in \emph{clusters.py} to apply k-means to hierarchical cluster for our set of blogs. We obtained the following results using various values for the number of clusters. We did note variations in the number of iterations required on subsequent executions of the same algorithm. Croft \cite{croft2010search} provides one possible explanation for this observation which is the naive initial assignment of items to a cluster. To obtain more consistent results would require that we remove the element of randomness and instead use some knowledge of the data to make a better decision.
+\subsection{Response}We used functions in \emph{clusters.py} to apply k-means to the hierarchical clusters for our set of blogs. We obtained the following results using various values for the number of desired clusters. We did note variations in the number of iterations required on subsequent executions of the same algorithm. Croft \cite{croft2010search} provides one possible explanation for this observation which is the naive assignment of items to an initial cluster. To obtain more consistent results would require that we remove the element of randomness and instead use some knowledge of the data to make a better decision.
 
 \begin{itemize}
 \item When k=5, iterations=3
@@ -100,8 +99,7 @@ As explained by Segaran, ``the dashes represent a cluster of two or more  merged
 \section{Question 4}
 \subsection{Problem}Use MDS to create a JPEG of the blogs similar to slide 29.  How many iterations were required?
 
-\subsection{Response}We used functions in \emph{clusters.py} to perform multidimensional scaling (MDS). 175 iterations were required to produce the JPEG shown in Figure \ref{fig:blogs2d}.
-****PCI note: Figure 3-10 shows the outcome of the multidimensional scaling algorithm. The clusters don’t break out quite as well as they do on the dendrogram, but there’s still clearly  some  topical  grouping,  such  as  the  search-engine-related  set  near  the  top. These ended up very far away from the political and celebrity blogs. ***
+\subsection{Response}We used functions in \emph{clusters.py} to apply the multidimensional scaling (MDS) algorithm. 175 iterations were required to produce the JPEG shown in Figure \ref{fig:blogs2d}. This visual representation should be easier to interpret than a dendrogram. As previously noted during hierarchical clustering, we see a grouping of news sites near the top of diagram which are considerably distanced from the technology blogs near the bottom. The distance is indicative of the perceived dissimilarity. We also notice several blogs which appear to be so similar, based on distance, that the titles overlap. Two of these blogs are \emph{Wired Top Stories} and \emph{Web Science and Digital Library Research Group}. In close proximity is another pair of titles which are seated directly on top of one another, \emph{Kottke} and \emph{Gothamist Daily}, both sites have blog entries that discuss pop culture happenings in and around New York City. The same relationships were observed in the clustering of our ASCII dendrogram.
 
 \begin{figure}[htbp]
 	\centering

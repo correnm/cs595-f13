@@ -1,17 +1,17 @@
-\contentsline {section}{\numberline {1}Question 1}{4}
-\contentsline {subsection}{\numberline {1.1}Problem}{4}
-\contentsline {subsection}{\numberline {1.2}Response}{4}
-\contentsline {section}{\numberline {2}Question 2}{4}
-\contentsline {subsection}{\numberline {2.1}Problem}{4}
-\contentsline {subsection}{\numberline {2.2}Response}{5}
-\contentsline {section}{\numberline {3}Question 3}{5}
-\contentsline {subsection}{\numberline {3.1}Problem}{5}
-\contentsline {subsection}{\numberline {3.2}Response}{5}
-\contentsline {section}{\numberline {4}Question 4}{7}
-\contentsline {subsection}{\numberline {4.1}Problem}{7}
-\contentsline {subsection}{\numberline {4.2}Response}{7}
-\contentsline {section}{\numberline {5}Question 5 Extra Credit}{7}
-\contentsline {subsection}{\numberline {5.1}Problem}{7}
-\contentsline {subsection}{\numberline {5.2}Response}{7}
-\contentsline {chapter}{Appendices}{9}
-\contentsline {chapter}{\numberline {A}Python Source Code}{10}
+\contentsline {section}{\numberline {1}Question 1}{3}
+\contentsline {subsection}{\numberline {1.1}Problem}{3}
+\contentsline {subsection}{\numberline {1.2}Response}{3}
+\contentsline {section}{\numberline {2}Question 2}{3}
+\contentsline {subsection}{\numberline {2.1}Problem}{3}
+\contentsline {subsection}{\numberline {2.2}Response}{4}
+\contentsline {section}{\numberline {3}Question 3}{4}
+\contentsline {subsection}{\numberline {3.1}Problem}{4}
+\contentsline {subsection}{\numberline {3.2}Response}{4}
+\contentsline {section}{\numberline {4}Question 4}{6}
+\contentsline {subsection}{\numberline {4.1}Problem}{6}
+\contentsline {subsection}{\numberline {4.2}Response}{6}
+\contentsline {section}{\numberline {5}Question 5 Extra Credit}{6}
+\contentsline {subsection}{\numberline {5.1}Problem}{6}
+\contentsline {subsection}{\numberline {5.2}Response}{6}
+\contentsline {chapter}{Appendices}{8}
+\contentsline {chapter}{\numberline {A}Python Source Code}{9}

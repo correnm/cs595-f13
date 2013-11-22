@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  20 NOV 2013 21:08
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  21 NOV 2013 20:20
 entering extended mode
 **Assignment*09.tex
 
@@ -186,52 +186,39 @@ mework Assignments\Assignment 09\Assignment 09.lof")
  [2
 
 ]
-("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 09\Assignment 09.lot")
-\tf@lot=\write5
- [3
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
 
-Overfull \hbox (4.60532pt too wide) in paragraph at lines 53--54
+Overfull \hbox (4.60532pt too wide) in paragraph at lines 52--53
 []\OT1/cmr/m/n/10.95 Use the re-sult-ing list of words and the blog names to cre-ate the blog-term ma-trix (i.e.,blogdat
 a.txt).
  []
 
-[4] <blogclust.jpg, id=25, 2007.5pt x 2007.5pt>
+[3] <blogclust.jpg, id=22, 2007.5pt x 2007.5pt>
 File: blogclust.jpg Graphic file (type jpg)
  <use blogclust.jpg>
-Package pdftex.def Info: blogclust.jpg used on input line 83.
+Package pdftex.def Info: blogclust.jpg used on input line 82.
 (pdftex.def)             Requested size: 486.47249pt x 486.4659pt.
- [5] [6 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Sci
-ence/Homework Assignments/Assignment 09/blogclust.jpg>]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- <blogs2d.jpg, id=33, 2007.5pt x 2007.5pt>
+ [4] [5 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2013 Fall           - CS 895 Introduction to Web Sci
+ence/Homework Assignments/Assignment 09/blogclust.jpg>] <blogs2d.jpg, id=29, 2007.5pt x 2007.5pt>
 File: blogs2d.jpg Graphic file (type jpg)
  <use blogs2d.jpg>
-Package pdftex.def Info: blogs2d.jpg used on input line 108.
+Package pdftex.def Info: blogs2d.jpg used on input line 106.
 (pdftex.def)             Requested size: 486.47249pt x 486.4659pt.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 09\Assignment 09.bbl" [7] [8 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2
-013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 09/blogs2d.jpg>]) [9
+mework Assignments\Assignment 09\Assignment 09.bbl" [6] [7 <C:/Users/Corren/Documents/Universities/ODU/ODU PhD/Courses/2
+013 Fall           - CS 895 Introduction to Web Science/Homework Assignments/Assignment 09/blogs2d.jpg>]) [8
 
 ]
 Appendix A.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 09\generatefeedvector.py" [10
+mework Assignments\Assignment 09\generatefeedvector.py" [9
 
 ]
 Overfull \hbox (13.66335pt too wide) in paragraph at lines 87--87
@@ -240,26 +227,26 @@ Overfull \hbox (13.66335pt too wide) in paragraph at lines 87--87
 
 )
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
-mework Assignments\Assignment 09\clusters.py" [11] [12] [13] [14] [15] [16] [17]) [18]
+mework Assignments\Assignment 09\clusters.py" [10] [11] [12] [13] [14] [15] [16]) [17]
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
 mework Assignments\Assignment 09\Assignment 09.aux") ) 
 Here is how much of TeX's memory you used:
- 1994 strings out of 494045
- 28988 string characters out of 3145966
- 87021 words of memory out of 3000000
+ 1991 strings out of 494045
+ 28648 string characters out of 3145966
+ 87020 words of memory out of 3000000
  5262 multiletter control sequences out of 15000+200000
  10537 words of font info for 37 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,6n,21p,925b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,6n,21p,999b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "Assignment 09.pdf" (19 pages, 500238 bytes).
+Output written on "Assignment 09.pdf" (18 pages, 502497 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
