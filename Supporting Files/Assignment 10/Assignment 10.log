@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  8 DEC 2013 19:53
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.1.18)  11 DEC 2013 20:00
 entering extended mode
 **Assignment*10.tex
 
@@ -208,14 +208,14 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-Overfull \hbox (18.43497pt too wide) in paragraph at lines 87--131
+Overfull \hbox (34.06915pt too wide) in paragraph at lines 87--132
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 138.
+(Font)              <7> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 138.
+(Font)              <5> on input line 139.
 
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
 mework Assignments\Assignment 10\Assignment 10.bbl" [4] [5] [6]) [7
@@ -236,20 +236,20 @@ mework Assignments\Assignment 10\feedfilter.py" [14
 ("C:\Users\Corren\Documents\Universities\ODU\ODU PhD\Courses\2013 Fall           - CS 895 Introduction to Web Science\Ho
 mework Assignments\Assignment 10\Assignment 10.aux") ) 
 Here is how much of TeX's memory you used:
- 1986 strings out of 494045
- 28548 string characters out of 3145966
+ 1985 strings out of 494045
+ 28533 string characters out of 3145966
  103042 words of memory out of 3000000
- 5260 multiletter control sequences out of 15000+200000
- 11051 words of font info for 39 fonts, out of 3000000 for 9000
+ 5259 multiletter control sequences out of 15000+200000
+ 10705 words of font info for 38 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,9n,21p,801b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,9n,21p,1009b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "Assignment 10.pdf" (17 pages, 147328 bytes).
+Output written on "Assignment 10.pdf" (17 pages, 147953 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

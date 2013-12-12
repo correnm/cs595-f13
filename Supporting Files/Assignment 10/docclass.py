@@ -27,8 +27,8 @@ class classifier:
     
   def setdb(self,dbfile):
     self.con=sqlite.connect(dbfile)
-    self.con.execute('create table if not exists 
-		rss(num, entry, feature, predicted, actual, cprob)')
+    self.con.execute('create table if not exists rss(num, entry, feature, 
+    predicted, actual, cprob)')
     self.con.execute('create table if not exists fc(feature,category,count)')
     self.con.execute('create table if not exists cc(category,count)')
     # remove old data from previous sessions
@@ -50,11 +50,11 @@ class classifier:
     count=self.fcount(f,cat)
     if count==0:
       self.con.execute("insert into fc values ('%s','%s',1)" 
-                       % (f,cat))
+                       % (f,cat.lower()))
     else:
       self.con.execute(
         "update fc set count=%d where feature='%s' and category='%s'" 
-        % (count+1,f,cat)) 
+        % (count+1,f,cat.lower())) 
 
   ## The number of times a feature has appeared in a category
   def fcount(self,f,cat):
@@ -68,7 +68,7 @@ class classifier:
   def incc(self,cat):
     count=self.catcount(cat)
     if count==0:
-      self.con.execute("insert into cc values ('%s',1)" % (cat))
+      self.con.execute("insert into cc values ('%s',1)" % (cat.lower()))
     else:
       self.con.execute("update cc set count=%d where category='%s'" 
                        % (count+1,cat))    

@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {3.2}Response}{4}
 \contentsline {section}{\numberline {4}Question 4 Extra Credit}{4}
 \contentsline {subsection}{\numberline {4.1}Problem}{4}
-\contentsline {subsection}{\numberline {4.2}Response}{4}
+\contentsline {subsection}{\numberline {4.2}Response}{6}
 \contentsline {chapter}{Appendices}{7}
 \contentsline {chapter}{\numberline {A}Python Source Code - docclass.py}{8}
 \contentsline {chapter}{\numberline {B}Python Source Code - feedfilter.py}{14}
